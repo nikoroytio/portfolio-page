@@ -1,12 +1,37 @@
+@font-face {
+  font-family: 'BERLIN';  
+  src: url('/public/fonts/Berlin-Bold.woff2') format('woff2'),
+       url('/public/fonts/Berlin-Bold.woff') format('woff');
+  font-family: 'BERLINXTRA';  
+  src: url('/public/fonts/Berlin-ExtraBold.woff2') format('woff2'),
+       url('/public/fonts/Berlin-ExtraBold.woff') format('woff');
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 body {
   background-color: black;
 }
 
-p {
-  color: white;
+h1{
+  font-family: "BERLIN";
+  font-size: 96px;
+}
+h2{
+  color:white;
+  font-family: "Roboto";
+  font-size: 28px;
 }
 
-.App {
-  text-align: center;
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
 }
+
 
