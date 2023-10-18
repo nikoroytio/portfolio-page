@@ -21,9 +21,7 @@ h1 {
     text-align: center;
 }
 
-.overlay-content h1 {
-    margin-top: 160px;
-}
+
 
 .overlay-content h2 {
     margin-top: 20px;
@@ -76,3 +74,11 @@ h1 {
     animation: fadeIn 1s 4s forwards;
   }
 
+.social-media-icons{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  scale:50%;
+  visibility: hidden;
+  animation: fadeIn 1s 4s forwards;
+}
