@@ -3,6 +3,7 @@ import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import SplashScreen from "./components/SplashScreen"
 import Hero from "./components/Hero";
+import About from "./components/About"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       ) : (
         <Hero />
       )}
+      <About/>
     </div>
   );
 }
