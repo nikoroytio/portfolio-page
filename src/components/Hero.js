@@ -4,16 +4,27 @@ import BackgroundVideo from "./BackgroundVideo"
 import LinkedIn from "../assets/icons/linkedin.png"
 import Instagram from "../assets/icons/instagram.png"
 import GitHub from "../assets/icons/github.png"
-import scrollDownPng from '../assets/image/scrollDown.png';
+import scrollDownPng from '../assets/icons/scrollDown.png';
 import './Hero.css';
 
-function Hero() {
+function Hero({ onScrollDown }) {
+
+  const handleScrollDown = () => {
+    onScrollDown();
+    setTimeout(() => {
+      const aboutSection = document.getElementById('about-me');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 50); // A small delay to ensure the About section is rendered
+  };
+
   return (
-    <Container className="p-0 hero-container">
+    <Container fluid className="p-0 hero-container">
       <BackgroundVideo />
       <div className="overlay-content">
         <Row>
-          <Col md={6}>
+          <Col>
             <div className='social-media-icons'>
             <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
               <img src={GitHub} alt="Github - logo" />
@@ -30,11 +41,11 @@ function Hero() {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col>
             <h2 className='typewriter-h2'>TULEVA KOODARINNE</h2>
-            <button type='button' className='scrollDown'>
+            <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
             <img src={scrollDownPng} alt="Scroll Down" />
-            </button>
+            </a>
           </Col>
         </Row>
         
