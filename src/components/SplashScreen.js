@@ -6,9 +6,17 @@ function SplashScreen({ onFinished }) {
   const [videoEnded, setVideoEnded] = useState(false);
 
   useEffect(() => {
+    // Set overflow to hidden when the splash screen mounts
+    document.body.style.overflow = "hidden";
+
     if (videoEnded) {
       onFinished();
     }
+
+    // Reset overflow when the splash screen unmounts
+    return () => {
+      document.body.style.overflow = "auto"; // or "visible"
+    };
   }, [videoEnded, onFinished]);
 
   return (
