@@ -1,3 +1,4 @@
+// Component for displaying the splash screen with a video.
 import React, { useEffect, useState } from 'react';
 import "./SplashScreen.css";
 import SplashScreenVideo from '../assets/videos/splash-screen.mp4';
