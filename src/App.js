@@ -8,7 +8,9 @@ import About from "./components/About"
 
 function App() {
 
+  // state for controlling the visibility of the splash screen 
    const [showSplash, setShowSplash] = useState(true);
+   // state for controlling the visibility of the about section
    const [showAbout, setShowAbout] = useState(false);
 
    const handleScrollDown = () => {
