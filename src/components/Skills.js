@@ -4,6 +4,7 @@ import CircularProgressBar from './CircularProgressBar';
 import "./Skills.css"
 
 function Skills() {
+  // State to manage which section (education, skills, job history) is displayed
     const [selectedSection, setSelectedSection] = useState('education');
 
     return (
@@ -28,7 +29,11 @@ function Skills() {
   }
   
   function EducationComponent() {
-    return <div className='info'>Your education details here...</div>;
+    return <Container>
+              <Row> 
+                <h3></h3>
+              </Row>
+            </Container>
   }
   
   function SkillsComponent() {
