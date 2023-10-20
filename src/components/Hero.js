@@ -1,3 +1,4 @@
+// The hero component. Displays the main introduction and social links of the website.
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundVideo from "./BackgroundVideo"
@@ -9,6 +10,7 @@ import './Hero.css';
 
 function Hero({ onScrollDown }) {
 
+  // Handler to smoothly scroll down to the 'about me' section  
   const handleScrollDown = () => {
     onScrollDown();
     setTimeout(() => {
@@ -36,13 +38,13 @@ function Hero({ onScrollDown }) {
               <img src={LinkedIn} alt="LInkedIn - logo" />
             </a>
             </div>
-            <h1 className='typewriter-h1'>HEI, OLEN NIKO RÖYTIÖ</h1>
+            <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
             
           </Col>
         </Row>
         <Row>
           <Col>
-            <h2 className='typewriter-h2'>TULEVA KOODARINNE</h2>
+            <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
             <img src={scrollDownPng} alt="Scroll Down" />
             </a>
