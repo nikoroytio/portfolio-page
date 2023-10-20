@@ -6,9 +6,10 @@ import "./About.css";
 
 
 function About() {
-
+  // State to manage the visibility of the component for fade-in effect
   const [visible, setVisible] = useState(false);
 
+  // On component mount, set visible to true
   useEffect(() => {
     setVisible(true);
   }, []);
