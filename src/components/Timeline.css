@@ -1,0 +1,56 @@
+/* stylesheet for timeline */
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px; /* Provide space for the dots and the line */
+    margin-top: 20px;
+}
+
+.timeline-event {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.timeline-event h5 {
+    font-family: "Poppins";
+    font-size: 30px;
+}
+
+.timeline-event-dot {
+    position: absolute;
+    left: -20px; /* Position it to the left of the content */
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #f9004d;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-event-content {
+    border: solid rgb(122, 122, 122);
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -16px; /* Center it between the dot and the edge */
+    width: 1px;
+    height: 100%;
+    background-color: #f9004d;
+    z-index: 1;
+}
+
