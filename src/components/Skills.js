@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CircularProgressBar from './CircularProgressBar';
+import Education from './education'
+import MyWorkHistory from './WorkHistory';
 import "./Skills.css"
 
 function Skills() {
@@ -20,20 +22,18 @@ function Skills() {
                     <button onClick={() => setSelectedSection('jobHistory')}>Job History</button>
                 </Col>
             </Row>
-            {selectedSection === 'education' && <EducationComponent />}
-            {selectedSection === 'skills' && <SkillsComponent />}
-            {selectedSection === 'jobHistory' && <JobHistoryComponent />}
+            <Row className='changingInfo'>
+              {selectedSection === 'education' && <EducationComponent />}
+              {selectedSection === 'skills' && <SkillsComponent />}
+              {selectedSection === 'jobHistory' && <JobHistoryComponent />}
+            </Row>
             
         </Container>
     );
   }
   
   function EducationComponent() {
-    return <Container>
-              <Row> 
-                <h3></h3>
-              </Row>
-            </Container>
+    return <div className='education'><Education/></div>;
   }
   
   function SkillsComponent() {
@@ -70,9 +70,7 @@ function Skills() {
   }
   
   function JobHistoryComponent() {
-    return <div className='info'>Your job history details here...</div>;
+    return <div className='work'><MyWorkHistory/></div>;
   }
   
-
-
 export default Skills
