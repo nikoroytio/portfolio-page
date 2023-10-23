@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import CircularProgressBar from './CircularProgressBar';
 import Education from './education'
 import Skills from './Skills'
 import MyWorkHistory from './WorkHistory';
@@ -9,24 +8,35 @@ import "./AboutButtonSection.css"
 function AboutButtonSection() {
   // State to manage which section (education, skills, job history) is displayed
     const [selectedSection, setSelectedSection] = useState('education');
+    // State to manage visibility, neede for fade in animation
+    const [showSection, setShowSection] = useState(true); 
+
+     // for animation to display on every click, we need to hide section from dom
+    const changeSection = (section) => {
+      setShowSection(false); // Hide the section
+      setTimeout(() => {
+          setSelectedSection(section);
+          setShowSection(true); // Show it after a delay
+      }, 50); 
+  };
 
     return (
         <Container className='SkillInfo'>
             <Row>
                 <Col>
-                    <button onClick={() => setSelectedSection('education')}>Education</button>
+                    <button onClick={() => changeSection('education')}>Education</button>
                 </Col>
                 <Col>
-                    <button onClick={() => setSelectedSection('skills')}>Skills</button>
+                    <button onClick={() => changeSection('skills')}>Skills</button>
                 </Col>
                 <Col>
-                    <button onClick={() => setSelectedSection('jobHistory')}>Job History</button>
+                    <button onClick={() => changeSection('jobHistory')}>Job History</button>
                 </Col>
             </Row>
             <Row className='changingInfo'>
-              {selectedSection === 'education' && <EducationComponent />}
-              {selectedSection === 'skills' && <SkillsComponent />}
-              {selectedSection === 'jobHistory' && <JobHistoryComponent />}
+              {showSection && selectedSection === 'education' && <EducationComponent />}
+              {showSection && selectedSection === 'skills' && <SkillsComponent />}
+              {showSection && selectedSection === 'jobHistory' && <JobHistoryComponent />}
             </Row>
             
         </Container>
@@ -34,15 +44,15 @@ function AboutButtonSection() {
   }
   
   function EducationComponent() {
-    return <div className='education'><Education/></div>;
+    return <div className='education fadeInEffect'><Education/></div>;
   }
   
   function SkillsComponent() {
-    return <div className='InfoBars'><Skills/></div>;
+    return <div className='InfoBars fadeInEffect'><Skills/></div>;
   }
   
   function JobHistoryComponent() {
-    return <div className='work'><MyWorkHistory/></div>;
+    return <div className='work fadeInEffect'><MyWorkHistory/></div>;
   }
   
 export default AboutButtonSection
