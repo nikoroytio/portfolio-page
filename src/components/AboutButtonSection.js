@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CircularProgressBar from './CircularProgressBar';
 import Education from './education'
+import Skills from './Skills'
 import MyWorkHistory from './WorkHistory';
-import "./Skills.css"
+import "./AboutButtonSection.css"
 
-function Skills() {
+function AboutButtonSection() {
   // State to manage which section (education, skills, job history) is displayed
     const [selectedSection, setSelectedSection] = useState('education');
 
@@ -37,40 +38,11 @@ function Skills() {
   }
   
   function SkillsComponent() {
-    return <Container >
-              <Row className='InfoBars'>
-                <Col>
-                  <CircularProgressBar value={42}/>
-                  <p>JAVASCRIPT</p>
-                </Col>
-                <Col>
-                  <CircularProgressBar value={64}/>
-                  <p>HTML</p>
-                </Col>
-                <Col>
-                  <CircularProgressBar value={63}/>
-                  <p>CSS</p>
-                </Col>
-              </Row>
-              <Row className='InfoBars'>
-                <Col>
-                  <CircularProgressBar value={30}/>
-                  <p>PYTHON</p>
-                </Col>
-                <Col>
-                  <CircularProgressBar value={100}/>
-                  <p>VIDEO EDITING</p>
-                </Col>
-                <Col>
-                  <CircularProgressBar value={83}/>
-                  <p>GRAPHIC DESIGN</p>
-                </Col>
-              </Row>
-          </Container>
+    return <div className='InfoBars'><Skills/></div>;
   }
   
   function JobHistoryComponent() {
     return <div className='work'><MyWorkHistory/></div>;
   }
   
-export default Skills
+export default AboutButtonSection
