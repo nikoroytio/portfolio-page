@@ -1,5 +1,47 @@
 /* stylesheet for projects section */
 
-.projectRow {
-    margin-top: 30px;
+.projectContainer {
+    background-color: rgb(9, 9, 9);
+    padding-top: 40px;
+    text-align: center;
 }
+
+.projectContainer h2 {
+    padding: 7px;
+    color: rgb(122, 122, 122);
+    font-size: 48px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, #f9004d 10%, hsl(0, 0%, 30%) 20%);
+    background-size: 200% 100%; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+}
+
+
+.projectContainer h4 {
+    font-size: 36px;
+    transition: 0.5s ease-out;
+}
+
+.projectContainer h4:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    letter-spacing: 3px;
+}
+
+.projectRow {
+margin-top: 80px;
+}
+
+
+@keyframes shine {
+    0% {
+      background-position: 100% 0;
+    }
+    60% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
