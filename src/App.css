@@ -17,7 +17,7 @@ p{
   font-family: "Roboto";
   color: white;
 }
-h1, h2 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -36,6 +36,18 @@ h2{
   font-family: "Poppins";
   font-weight: bold;
   font-size: 36px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: white;
+}
+
+h4 {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: rgb(122, 122, 122);
 }
 
 button {
