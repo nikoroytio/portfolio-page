@@ -1,13 +1,20 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import Calculator from "../components/Calculator"
 import "./Projects.css"
 
 function Projects() {
   return (
     <Container>
-        <Row>
+        <Row className='projectRow'>
             <Col>
-                <h1>Hello World!</h1>
+                <Calculator />
+            </Col>
+            <Col>
+
+            </Col>
+            <Col>
+
             </Col>
         </Row>
     </Container>
