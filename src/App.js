@@ -3,6 +3,7 @@ import './App.css';
 import SplashScreen from "./components/SplashScreen"
 import Hero from "./sections/Hero";
 import About from "./sections/About"
+import Projects from "./sections/Projects"
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Hero onScrollDown={handleScrollDown}/>
     )}
       {showAbout && <About />}
+      {showAbout && <Projects/>}
     </div>
   );
 }
