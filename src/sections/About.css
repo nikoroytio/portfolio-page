@@ -1,0 +1,56 @@
+/*stylesheet for About section */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-out; /* Adjust duration as needed */
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+.about-container{
+    padding: 16px;
+    background-color: rgb(27, 27, 27);
+    
+}
+.AboutImage{
+    overflow: visible;
+    min-width: 100%;
+    height: auto;
+}
+
+
+.about-container h2{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+
+.about-container h2::after {
+    content: "";  /* This is required for the pseudo-element to show */
+    display: block;
+    width: 40%;  /* Adjust this to change the width of the underline */
+    height: 5px;
+    background-color: #f9004d;
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* This, combined with the transform property, centers the underline */
+    transform: translateX(-50%);
+}
+
+#about-me{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me p{
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(122, 122, 122);
+}
