@@ -49,7 +49,7 @@ content: '';
     margin-bottom: 16px;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInOpacity {
     from {
         opacity: 0;
     }
@@ -59,5 +59,5 @@ content: '';
 }
 
 .fadeInEffect {
-    animation: fadeIn 0.75s forwards; 
+    animation: fadeInOpacity 0.75s forwards; 
 }
