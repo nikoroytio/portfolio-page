@@ -8,17 +8,49 @@ function Calculator() {
     const [lastOperationWasEqual, setLastOperationWasEqual] = useState(false);
 
     const displayRef = useRef(null);
+    const [fontSize, setFontSize] = useState('100%');
+    const DEFAULT_FONT_SIZE = '5rem';
 
     useEffect(() => {
-        adjustFontSize(displayRef.current);
+        adjustFontSize();
     }, [displayValue]);
+
+    const adjustFontSize = () => {
+        setFontSize(DEFAULT_FONT_SIZE);
+        const element = displayRef.current;
+        const MAX_WIDTH = element.clientWidth;
+    
+        while (element.scrollWidth > MAX_WIDTH) {
+            let currentSizePercentage = parseFloat(window.getComputedStyle(element).fontSize) / parseFloat(window.getComputedStyle(element.parentElement).fontSize) * 100;
+            setFontSize((currentSizePercentage - 20) + "%");  // Decrease by 20% each iteration
+        }
+    };
+
+    const isDisplayMaxLength = () => {
+        return displayValue.length > 7;  
+    };
+
+    const currentNumberHasDot = () => {
+        return displayValue.includes('.');
+    };
+
+    const resetFontSize = (element) => {
+        setFontSize(DEFAULT_FONT_SIZE);  
+    };
+
+    const isOperator = (char) => {
+        return ['+', '-', '*', '/'].includes(char);
+    };
 
     const handleNumberInput = (numberstr) => {
         if (isDisplayMaxLength()) return;
-
         let newDisplayValue = displayValue;
 
-        if (isOperator(displayValue.trim())) {
+        if (lastOperationWasEqual) {
+            setLastOperationWasEqual(false);
+            newDisplayValue = numberstr;
+        }
+        if (isOperator(displayValue)) {
             newDisplayValue = ""; // Clear the display if it currently shows an operator
             setLastOperationWasEqual(false); // Reset this flag as we're starting a new operation
         }
@@ -28,9 +60,11 @@ function Calculator() {
                 newDisplayValue += ".";
             }
         }
-        
-        else if(lastOperationWasEqual){
-            return;
+
+        if (lastOperationWasEqual) {
+            setLastOperationWasEqual(false);
+            setStoredValue(null);
+            setStoredOperator(null);
         }
     
         else {
@@ -44,32 +78,37 @@ function Calculator() {
         let newDisplayValue = displayValue;
         let newStoredValue = storedValue;
         let newStoredOperator = storedOperator;
-
-        if (operation !== "=") {
-            if (operation !== "=") {
-                if (!lastOperationWasEqual) {
-                    newStoredValue = newDisplayValue;
-                }
+    
+        // If it's a mathematical operation (not equal sign)
+        if (['+', '-', '*', '/'].includes(operation)) {
+            if (!lastOperationWasEqual) {
+                newStoredValue = displayValue;
                 newStoredOperator = operation;
-                setDisplayValue(operation); // Show the operation on the display
-
-        }else {
+                newDisplayValue = operation; // Show the operation on the display
+            } else {
+                // If there's an operator right after pressing "="
+                // This block can handle specific logic if needed, e.g., starting a new chain of operations
+                newStoredOperator = operation;
+                newDisplayValue = operation;
+            }
+        } else if (operation === "=") { 
             if (newStoredOperator && newStoredValue !== null) {
                 const expression = `${newStoredValue} ${newStoredOperator} ${newDisplayValue}`;
-                newDisplayValue = calculateResult(expression).toString(); // ensure it's a string
+                const result = calculateResult(expression).toString(); // ensure it's a string
                 resetFontSize(displayRef.current);  // Adjust font size after calculation
                 setLastOperationWasEqual(true);
                 newStoredOperator = null;
-                newStoredValue = newDisplayValue; // Store the result for possible further calculations
+                newStoredValue = result; // Store the result for possible further calculations
+                newDisplayValue = result; 
             }
         }
     
-        setDisplayValue(updatedValue); // Update the display value
-        setStoredValue(updatedStoredValue); // Update the stored value if necessary
-        setStoredOperator(updatedStoredOperator); // Update the stored operator if necessary
-        };
-    }
-
+        setDisplayValue(newDisplayValue); // Update the display value
+        setStoredValue(newStoredValue); // Update the stored value if necessary
+        setStoredOperator(newStoredOperator); // Update the stored operator if necessary
+    };
+    
+    
     const calculateResult = (expression) => {
         try {
             let expressionArray = expression.split(" ");  
@@ -123,19 +162,10 @@ function Calculator() {
         return currentResult;
     };
 
-    const adjustFontSize = (element) => {
-        const MAX_WIDTH = element.clientWidth;
-    
-
-        while (element.scrollWidth > MAX_WIDTH) {
-            let currentSizePercentage = parseFloat(window.getComputedStyle(element).fontSize) / parseFloat(window.getComputedStyle(element.parentElement).fontSize) * 100;
-            element.style.fontSize = (currentSizePercentage - 20) + "%";  // Decrease by 10% each iteration
-        }
-    };
 
     return (
         <div className="calculator">
-            <div className="calculator_display" ref={displayRef}>{displayValue}</div>
+            <div className="calculator_display" ref={displayRef} style={{ fontSize: fontSize }}>{displayValue}</div>
             <div className="calculator_keys">
                 <button className="calculator_key calculator_key_operator" onClick={() => handleOperation('+')}>+</button>
                 <button className="calculator_key calculator_key_operator" onClick={() => handleOperation('-')}>-</button>
@@ -152,7 +182,12 @@ function Calculator() {
                 <button className="calculator_key" onClick={() => handleNumberInput('3')}>3</button>
                 <button className="calculator_key" onClick={() => handleNumberInput('0')}>0</button>
                 <button className="calculator_key" onClick={() => handleNumberInput('.')}>.</button>
-                <button className="calculator_key" onClick={() => setDisplayValue('0')}>AC</button>
+                <button className="calculator_key" onClick={() => {
+                                                                    setDisplayValue('0');
+                                                                    setStoredValue(null);
+                                                                    setStoredOperator(null);
+                                                                    setLastOperationWasEqual(false);
+                                                                    }}>AC</button>
                 <button className="calculator_key calculator_key_enter" onClick={() => handleOperation('=')}>=</button>
             </div>
         </div>
