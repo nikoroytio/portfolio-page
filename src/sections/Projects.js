@@ -1,8 +1,16 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
+import "./Projects.css"
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <Container>
+        <Row>
+            <Col>
+                <h1>Hello World!</h1>
+            </Col>
+        </Row>
+    </Container>
   )
 }
 
