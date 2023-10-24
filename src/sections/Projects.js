@@ -5,9 +5,15 @@ import "./Projects.css"
 
 function Projects() {
   return (
-    <Container>
+    <Container fluid className='projectContainer'>
+      <Row>
+        <Col>
+        <h2>My projects</h2>
+        </Col>
+      </Row>
         <Row className='projectRow'>
             <Col>
+                <h4>Calculator</h4>
                 <Calculator />
             </Col>
             <Col>
