@@ -105,7 +105,7 @@ after that we can move on to cloning repository and installing depencies.
 
 This project can be used as a starting point, or template to your own portfolio.
 Folder structure:
-  ├── node_modules
+  ├── node_modules</br>
   ├── public/
   │   └── fonts
   └── src/
