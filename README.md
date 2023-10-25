@@ -107,14 +107,14 @@ This project can be used as a starting point, or template to your own portfolio.
 Folder structure:  
 ├── node_modules  
 ├── public/  
-  │   └── fonts  
-  └── src/  
-     ├── assets/  
-     │   ├── icons  
-     │   ├── image  
-     │   └── videos  
-     ├── components  
-     └── sections  
+│   └── fonts  
+└── src/  
+    ├── assets/  
+    │   ├── icons  
+    │   ├── image  
+    │   └── videos  
+    ├── components  
+    └── sections  
       
 
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.
