@@ -5,9 +5,15 @@ function EtchASketch() {
     const [squares, setSquares] = useState(Array(16 * 16).fill(false));
     const [gridSize, setGridSize] = useState(16);
 
+    const [isErasing, setIsErasing] = useState(false);
+
     const handleMouseOver = (index) => {
         const updatedSquares = [...squares];
-        updatedSquares[index] = true;
+        if (isErasing) {
+            updatedSquares[index] = false; // Erase
+        } else {
+            updatedSquares[index] = true;  // Draw
+        }
         setSquares(updatedSquares);
     };
 
@@ -29,7 +35,10 @@ function EtchASketch() {
 
     return (
         <div>
+            <div className='buttons'>
             <button id="reset" onClick={resetSketchboard}>MAKE NEW SKETCHBOARD</button>
+            <button onClick={() => setIsErasing(!isErasing)}> {isErasing ? "Switch to Draw Mode" : "Switch to Erase Mode"}</button>
+            </div>
             <div id="container" style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}>
                 {squares.map((isDrawn, index) => (
                     <div
