@@ -66,15 +66,15 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+For getting this project started, you need to have installed node.js and npm. 
+Because we are working with react, we need to have create React app installed.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+After installing Node.js and npm. Install create React app.
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install -g create-react-app
   ```
 
 ### Installation
