@@ -71,9 +71,10 @@ after that we can move on to cloning repository and installing depencies.
 
 ### Prerequisites
 
-1. Install Node.js
+1. Install Node.js and npm
 
-  <a href="https://nodejs.org/en/download">Instructions</a>
+  <a href="[https://nodejs.org/en/download](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)">Instructions</a>
+  <a href="https://nodejs.org/en/download">Get it here</a>
 
 ### Installation
 
