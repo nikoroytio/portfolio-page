@@ -79,22 +79,22 @@ after that we can move on to cloning repository and installing depencies.
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/nikoroytio/portfolio-page.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. In case of issues shown after the npm install, run the below to automatically fix the issues:
-   ```sh
-   npm audit fix
-   ``
- 4. Start the development server by running the following command:
- ```sh
- npm start
- ```
+  1. Clone the repo
+    ```sh
+    git clone https://github.com/nikoroytio/portfolio-page.git
+    ```
+  2. Install NPM packages
+    ```sh
+    npm install
+    ```
+  3. In case of issues shown after the npm install, run the below to automatically fix the issues:
+    ```sh
+    npm audit fix
+    ```
+  4. Start the development server by running the following command:
+    ```sh
+    npm start
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
