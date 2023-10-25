@@ -13,10 +13,16 @@ function EtchASketch() {
 
     const resetSketchboard = () => {
         let userInput;
-        do {
+        while (true) {
             userInput = prompt("Set the new width as squares. The allowed maximum is 100 squares");
-        } while (isNaN(userInput) || userInput.trim() === "" || userInput > 100);
-
+    
+            if (!isNaN(userInput) && userInput.trim() !== "" && userInput > 0 && userInput <= 100) {
+                break;  // Break out of the loop if valid input is provided
+            } else {
+                alert("Please enter a valid number between 1 and 100.");
+            }
+        }
+    
         setGridSize(userInput);
         setSquares(Array(userInput * userInput).fill(false));
     };
