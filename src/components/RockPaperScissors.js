@@ -17,6 +17,9 @@ function RockPaperScissors() {
 
     const handleClick = (playerChoice) => {
         const computerChoice = getComputerChoice();
+        if (playerScore === 5 || computerScore === 5){
+            return;
+        }
         if (playerChoice === computerChoice) {
             setPlayerScore(prev => prev + 1);
             setComputerScore(prev => prev + 1);
