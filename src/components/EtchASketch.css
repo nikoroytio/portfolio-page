@@ -34,3 +34,7 @@
     padding: 10px;
     border-radius: 20px;
 }
+
+.sketchButtons button:hover{
+    opacity: 0.75;
+}
