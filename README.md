@@ -109,12 +109,12 @@ Folder structure:
 ├── public/  
 │   └── fonts  
 └── src/  
-    ├── assets/  
-    │   ├── icons  
-    │   ├── image  
-    │   └── videos  
-    ├── components  
-    └── sections  
+&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── icons  
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── image  
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── videos  
+&nbsp;&nbsp;&nbsp;&nbsp;├── components  
+&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
 
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.
