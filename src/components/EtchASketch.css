@@ -4,8 +4,11 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     background-color: white;
-    width: 400px;
+    width: 450px;
     margin: 0 auto;
+    border: solid 10px #f9004d;
+    border-radius: 15px;
+
 }
 
 .square {
@@ -17,12 +20,14 @@
 .drawn {
     background-color: black;
 }
-.buttons {
+.sketchButtons {
     display: flex;
     justify-content:space-around;
 }
-button {
-    background-color: rgba(122,122,122);
+.sketchButtons button{
+    background-color: #f9004d;
+    font-family: "Poppins";
+    color: white;
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
