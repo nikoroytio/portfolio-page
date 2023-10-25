@@ -66,15 +66,14 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-For getting this project started, you need to have installed node.js and npm. 
-Because we are working with react, we need to have create React app installed.
+For getting this project started, you need to have installed Node.js and npm. 
 
 ### Prerequisites
 
-After installing Node.js and npm. Install create React app.
-* npm
+After installing Node.js and npm you can clone the repository
+
   ```sh
-  npm install -g create-react-app
+  git clone https://github.com/nikoroytio/portfolio-page.git
   ```
 
 ### Installation
