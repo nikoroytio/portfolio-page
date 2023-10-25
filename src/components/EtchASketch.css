@@ -38,3 +38,8 @@
 .sketchButtons button:hover{
     opacity: 0.75;
 }
+
+.clicktodraw p {
+    margin-top: 5px;
+    color: rgba(122,122,122);
+}
