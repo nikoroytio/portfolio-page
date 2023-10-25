@@ -73,7 +73,7 @@ after that we can move on to cloning repository and installing depencies.
 
 1. Install Node.js
 
-<a href"https://nodejs.org/en/download">Instructions</a>
+  <a href="https://nodejs.org/en/download">Instructions</a>
 
 ### Installation
 
