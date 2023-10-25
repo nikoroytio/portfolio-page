@@ -55,6 +55,9 @@ function EtchASketch() {
                     ></div>
                 ))}
             </div>
+            <div className='clicktodraw'>
+                <p>click to draw</p>
+            </div>
         </div>
     );
 }
