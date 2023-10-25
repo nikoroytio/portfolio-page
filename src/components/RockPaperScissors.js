@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import rockImage from '../assets/image/rock.webp';
+import paperImage from '../assets/image/paper.webp';
+import scissorsImage from '../assets/image/scissors.webp';
 import './RockPaperScissors.css';
 
 function RockPaperScissors() {
@@ -44,10 +47,10 @@ function RockPaperScissors() {
 
     return (
         <div>
-            <div id="container">
-                <button id="rock" onClick={() => handleClick('rock')}><img src="/Images/hand-rock_hires.png" alt="Rock" /></button>
-                <button id="paper" onClick={() => handleClick('paper')}><img src="/Images/four-fingers_hires.png" alt="Paper" /></button>
-                <button id="scissors" onClick={() => handleClick('scissors')}><img src="/Images/hand-scissors_hires.png" alt="Scissors" /></button>
+            <div id="containerRps">
+                <button id="rock" onClick={() => handleClick('rock')}><img src={rockImage} alt="Rock" /></button>
+                <button id="paper" onClick={() => handleClick('paper')}><img src={paperImage} alt="Paper" /></button>
+                <button id="scissors" onClick={() => handleClick('scissors')}><img src={scissorsImage} alt="Scissors" /></button>
             </div>
             <div id="results">{resultText}</div>
             {showRematch && <button id="rematch" onClick={handleRematch}>Rematch</button>}
