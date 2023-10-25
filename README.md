@@ -104,17 +104,18 @@ after that we can move on to cloning repository and installing depencies.
 ## Usage
 
 This project can be used as a starting point, or template to your own portfolio.
-Folder structure:  </br>
-  ├── node_modules </br>
-  ├── public/
-  │   └── fonts
-  └── src/
-      ├── assets/
-      │   ├── icons
-      │   ├── image
-      │   └── videos
-      ├── components
-      └── sections
+Folder structure:  
+├── node_modules  
+├── public/  
+  │   └── fonts  
+  └── src/  
+      ├── assets/  
+      │   ├── icons  
+      │   ├── image  
+      │   └── videos  
+      ├── components  
+      └── sections  
+      
 
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.
 As structured, assets have images, videos and icons 
