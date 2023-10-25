@@ -1,6 +1,6 @@
 /*stylesheet for etch a sketch, in projects sections */
 
-#container {
+#containerSketch {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     background-color: white;
