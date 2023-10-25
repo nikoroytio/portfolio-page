@@ -103,7 +103,21 @@ after that we can move on to cloning repository and installing depencies.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This project can be used as a starting point, or template to your own portfolio.
+Folder structure:
+  ├── node_modules
+  ├── public/
+  │   └── fonts
+  └── src/
+      ├── assets/
+      │   ├── icons
+      │   ├── image
+      │   └── videos
+      ├── components
+      └── sections
+
+In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.
+As structured, assets have images, videos and icons 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
