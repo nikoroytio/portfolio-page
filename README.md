@@ -11,7 +11,7 @@
 <h3 align="center">Portfolio-page</h3>
 
   <p align="center">
-    project_description
+    This is Portfolio page made with react. I also used this project to learn react, which was new technology to me.
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
