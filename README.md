@@ -117,8 +117,13 @@ Folder structure:
 &nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
 
-In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.
-As structured, assets have images, videos and icons 
+In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
+As structured, assets folder have images, videos and icons needed for the project.  
+In component folder we have invidual components, like Rock Paper Scissors game. Components required .js and .css is in this folder.  
+In section folder we have every section. They are named descriptiove way, for example "About". Section has the section structure and component imports.  
+
+Page stylesheets are are used in descending way. So App.css sets overall rules for the whole page's look. Sections own .css files have section specific styling and invidual component styling is found in each components .css-file.  
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
