@@ -87,10 +87,15 @@ after that we can move on to cloning repository and installing depencies.
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. In case of issues shown after the npm install, run the below to automatically fix the issues:
+   ```sh
+   npm audit fix
    ```
+
+ 5. Start the development server by running the following command:
+ ```sh
+ npm start
+ ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
