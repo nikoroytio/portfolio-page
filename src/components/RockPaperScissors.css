@@ -1,17 +1,18 @@
 /* stylesheet for rock paper scissors game */
 
 
-#container button {
-    opacity: 0%;
-    padding: 30px;
+#containerRps button {
+    scale: 50%;
     margin: auto;
-    animation-name: fadein;
-    animation-delay: 1.5s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+    transition: 0.5s ease-out;
 }
 
-#container {
+#containerRps button:hover{
+    scale: 60%;
+}
+
+#containerRps {
+    margin-top: 26px ;
     display: flex;
     justify-content: space-around;
 }
@@ -26,6 +27,7 @@ span {
 }
 
 #rematch {
+    background-color: white;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
