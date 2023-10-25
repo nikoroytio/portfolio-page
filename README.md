@@ -147,7 +147,7 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 Niko Röytiö - roytioniko@gmail.com
-Project Link: <a href"https://github.com/nikoroytio/portfolio-page>HERE</a>
+Project Link: <a href"https://github.com/nikoroytio/portfolio-page">HERE</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
