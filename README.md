@@ -67,21 +67,19 @@
 ## Getting Started
 
 For getting this project started, you need to have installed Node.js and npm. 
+after that we can move on to cloning repository and installing depencies.
 
 ### Prerequisites
 
-After installing Node.js and npm you can clone the repository
+1. Install Node.js
 
-  ```sh
-  git clone https://github.com/nikoroytio/portfolio-page.git
-  ```
+<a href"https://nodejs.org/en/download">Instructions</a>
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/nikoroytio/portfolio-page.git
    ```
 3. Install NPM packages
    ```sh
