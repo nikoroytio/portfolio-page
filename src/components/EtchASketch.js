@@ -35,8 +35,8 @@ function EtchASketch() {
 
     return (
         <div>
-            <div className='buttons'>
-            <button id="reset" onClick={resetSketchboard}>MAKE NEW SKETCHBOARD</button>
+            <div className='sketchButtons'>
+            <button id="reset" onClick={resetSketchboard}>Make new sketchboard</button>
             <button onClick={() => setIsErasing(!isErasing)}> {isErasing ? "Switch to Draw Mode" : "Switch to Erase Mode"}</button>
             </div>
             <div id="container" style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}>
