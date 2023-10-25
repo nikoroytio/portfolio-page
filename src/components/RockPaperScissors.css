@@ -31,5 +31,15 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeInOpacity 0.75s forwards;
 
+}
+
+@keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
