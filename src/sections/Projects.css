@@ -1,7 +1,7 @@
 /* stylesheet for projects section */
 
 .projectContainer {
-    background-color: rgb(9, 9, 9);
+    background-image: linear-gradient( rgba(27,27,27), rgba(0,0,0));
     padding-top: 40px;
     text-align: center;
 }
