@@ -1,8 +1,16 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
+import "./Testimonials.css"
 
 function Testimonials() {
   return (
-    <div>Testimonials</div>
+    <Container fluid>
+        <Row className='testimonialsContent'>
+            <Col className='testimonialsItems'>
+                <h2>Working with me</h2>
+            </Col>
+        </Row>
+    </Container>
   )
 }
 
