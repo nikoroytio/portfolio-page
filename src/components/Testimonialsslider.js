@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import TestimonialsImage from '../assets/image/testimonialsbackground.webp'
+import QuotationMarks from "../assets/icons/quotation-marks.webp"
 import "./Testimonialsslider.css"
 
 function Testimonialsslider() {
@@ -8,24 +9,14 @@ function Testimonialsslider() {
           <Carousel.Item>
             <img src={TestimonialsImage} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={TestimonialsImage} alt="Second slide" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img src={TestimonialsImage} alt="Third slide" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <img src={QuotationMarks} />
+                <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
+                  what was agreed and the micro-enterprises that were the target group have received tools for 
+                  developing their business from the trainings. Trainer Niko is approachable and you dare to ask 
+                  him any questions that come to mind. The atmosphere of the trainings has 
+                  been relaxed and immediate.</p>
+                  <i>Katariina Moilanen, R&D expert, Savonia University of Applied Sciences</i>
+              
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
