@@ -1,0 +1,10 @@
+/*stylesheet for testimonials section */
+
+.testimonialsContent{
+    padding-top: 40px;
+}
+
+.testimonialsItems{
+    display: flex;
+    justify-content: center;
+}
