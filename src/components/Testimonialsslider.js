@@ -4,7 +4,7 @@ import "./Testimonialsslider.css"
 
 function Testimonialsslider() {
     return (
-        <Carousel className='carousel'>
+        <Carousel fade className='carousel'>
           <Carousel.Item>
             <img src={TestimonialsImage} alt="First slide" />
             <Carousel.Caption>

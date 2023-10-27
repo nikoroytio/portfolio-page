@@ -27,7 +27,7 @@ function App() {
     )}
       {showAbout && <About />}
       {showAbout && <Projects/>}
-      {showAbout && <Testimonials/>}
+ 
     </div>
   );
 }
