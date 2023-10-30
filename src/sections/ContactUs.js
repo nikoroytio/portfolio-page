@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import ContactForm from '../components/ContactForm';
 import "./ContactUs.css"
 
 function ContactUs() {
@@ -7,7 +8,7 @@ function ContactUs() {
     <Container>
         <Row>
             <Col>
-                
+                <ContactForm/>
             </Col>
         </Row>
     </Container>
