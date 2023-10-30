@@ -5,7 +5,7 @@ import "./ContactUs.css"
 
 function ContactUs() {
   return (
-    <Container className='contactUs'>
+    <Container fluid className='contactUs'>
         <Row>
             <Col>
             
