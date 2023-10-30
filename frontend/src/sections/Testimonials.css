@@ -1,5 +1,10 @@
 /*stylesheet for testimonials section */
 
+.testimonialsContainer{
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
 .testimonialsTitle {
     padding-top: 40px;
     text-align: center;
