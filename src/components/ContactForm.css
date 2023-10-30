@@ -1,1 +1,48 @@
 /*stylesheet for Contact Form */
+
+
+.formArea h2 {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.formArea p {
+    margin-top: 15px;
+}
+
+.form-control {
+    background-color:black;
+    color: rgba(122,122,122);
+}
+
+form label{
+    color:rgba(122, 122,122);
+}
+
+form label:focus{
+    background-color: transparent;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: white;
+}
+
+form label:focus{
+    background-color: blue;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    color: rgb(147, 147, 147); 
+}
+
+.form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.form-floating>.form-control:focus~label{
+    color: rgb(147, 147, 147); 
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+    background-color: transparent;
+}
