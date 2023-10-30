@@ -5,8 +5,11 @@ import "./ContactUs.css"
 
 function ContactUs() {
   return (
-    <Container>
+    <Container className='contactUs'>
         <Row>
+            <Col>
+            
+            </Col>
             <Col>
                 <ContactForm/>
             </Col>
