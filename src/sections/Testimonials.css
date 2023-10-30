@@ -9,3 +9,18 @@
 .testimonialsItems h2{
     color: #f9004d;
 }
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slideFadeInEffect {
+    animation: slideFadeIn 2s forwards;
+}
