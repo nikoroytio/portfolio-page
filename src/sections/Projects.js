@@ -7,7 +7,6 @@ import RockPaperScissors from "../components/RockPaperScissors.js"
 import "./Projects.css"
 
 
-
 function Projects() {
 
   const [ref, inView] = useInView({
