@@ -4,7 +4,13 @@ import "./ContactUs.css"
 
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <Container>
+        <Row>
+            <Col>
+                
+            </Col>
+        </Row>
+    </Container>
   )
 }
 
