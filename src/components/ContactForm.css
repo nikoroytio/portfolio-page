@@ -4,6 +4,13 @@
 .formArea h2 {
     font-size: 48px;
     margin-top: 20px;
+    transition: 0.5s ease-out;
+}
+
+.formArea h2:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    letter-spacing: 3px;
 }
 
 .formArea p {
