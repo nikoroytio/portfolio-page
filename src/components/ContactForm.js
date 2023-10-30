@@ -17,10 +17,11 @@ function ContactForm() {
   return (
     <Container>
         <Row>
-            <Col>
+            <Col className='formArea'>
+                <h2>Hire me!</h2>
+                <p>I am available for internship or hire. Connect with me via phone: +358 40 546 8496 or email: roytioniko@gmail.com</p>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="validationCustom01">
-                            <FloatingLabel  label="Email">
+                            <FloatingLabel controlId="emailInput" className="mb-3" label="Email">
 
                                     <Form.Control
                                         required
@@ -28,19 +29,15 @@ function ContactForm() {
                                         placeholder="Email"
                                     />
                             </FloatingLabel>
-                        </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="validationCustom02">
-                        <FloatingLabel  label="Name">
+                        <FloatingLabel  controlId="nameInput" className="mb-3" label="Name">
                                 <Form.Control
                                     required
                                     type="text"
                                     placeholder="Name"
                                 />
                         </FloatingLabel>
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="validationCustom03">
-                        <FloatingLabel  label="Subject">
+                        <FloatingLabel controlId="subjectInput" className="mb-3" label="Subject">
 
                                 <Form.Control
                                     required
@@ -48,18 +45,15 @@ function ContactForm() {
                                     placeholder="Subject"
                                 />
                         </FloatingLabel>
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="validationCustom04">
-                        <FloatingLabel  label="Message">
+                        <FloatingLabel controlId="messageInput" className="mb-3" label="Message">
 
                                 <Form.Control
                                     required
-                                    type="textare"
-                                    placeholder="Message"
+                                    type="textarea"
                                     style={{ height: '100px' }}
+                                    placeholder="Message"
                                 />
                         </FloatingLabel>
-                    </Form.Group>
 
                     <Form.Group className="mb-3">
                         <Form.Check
