@@ -7,7 +7,7 @@ function Testimonialsslider() {
     return (
         <Carousel fade className='carousel'>
           <Carousel.Item>
-            <img src={TestimonialsImage} alt="First slide" />
+            <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
@@ -20,7 +20,7 @@ function Testimonialsslider() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={TestimonialsImage} alt="First slide" />
+            <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
@@ -33,7 +33,7 @@ function Testimonialsslider() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={TestimonialsImage} alt="First slide" />
+            <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
@@ -46,7 +46,7 @@ function Testimonialsslider() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={TestimonialsImage} alt="First slide" />
+            <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
@@ -59,7 +59,7 @@ function Testimonialsslider() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={TestimonialsImage} alt="First slide" />
+            <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
