@@ -4,7 +4,13 @@ import "./ContactForm.css"
 
 function ContactForm() {
   return (
-    <div>ContactForm</div>
+    <Container>
+        <Row>
+            <Col>
+
+            </Col>
+        </Row>
+    </Container>
   )
 }
 
