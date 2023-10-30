@@ -63,7 +63,7 @@ function ContactForm() {
                             feedbackType="invalid"
                             />
                     </Form.Group>
-                    <Button type="submit">Submit form</Button>
+                    <Button type="submit" id="formSubmit">Submit</Button>
                 </Form>
             </Col>
         </Row>
