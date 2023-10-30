@@ -11,7 +11,7 @@ import "./Projects.css"
 function Projects() {
 
   const [ref, inView] = useInView({
-    threshold: 0.2,  // The percentage of the target element which is visible to trigger 'inView'
+    threshold: 0.1,  // The percentage of the target element which is visible to trigger 'inView'
     triggerOnce: true  // Ensures the animation only occurs once
   });
 
