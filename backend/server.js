@@ -4,7 +4,7 @@ const app = express();
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY); //put the API key in .env file
 const recipientEmail = process.env.RECIPIENT_EMAIL;
 
 app.use(cors());
@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
     const msg = {
-        to: recipientEmail,  // Your email where you want to get the messages
+        to: recipientEmail,  // Your email where you want to get the messages, this is in .env file
         from: req.body.email,  // User's email
         subject: req.body.subject,
         text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nMessage: ${req.body.message}`,
