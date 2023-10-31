@@ -7,6 +7,7 @@ import About from "./sections/About"
 import Projects from "./sections/Projects"
 import Testimonials from './sections/Testimonials';
 import ContactUs from './sections/ContactUs';
+import Footer from './sections/Footer';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       {showAbout && <Projects/>}
       {showAbout && <Testimonials/>}
       {showAbout && <ContactUs/>}
+      {showAbout && <Footer/>}
     </div>
   );
 }
