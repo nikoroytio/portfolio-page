@@ -70,3 +70,7 @@ form label:focus{
 #formSubmit:hover{
     opacity: 0.75;
 }
+
+.thankYouMessage{
+    margin-top: 180px;
+}
