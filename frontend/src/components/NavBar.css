@@ -1,0 +1,14 @@
+/* stylesheet for NavBar */
+
+@keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeInOpacity 0.75s forwards; 
+}
