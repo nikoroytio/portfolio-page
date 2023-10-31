@@ -86,10 +86,10 @@ form label:focus{
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typewriter 2s steps(44, end) forwards;
+    animation: typewriter2 2s steps(44, end) forwards;
 }
 
-@keyframes typewriter {
+@keyframes typewriter2 {
     0% {
       width: 0;
     }
