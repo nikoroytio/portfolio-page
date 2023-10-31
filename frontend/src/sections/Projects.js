@@ -15,17 +15,16 @@ function Projects() {
   });
 
   return (
-    <Container fluid className="projectContainer">
+    <Container fluid className={`projectContainer ${inView ? 'slideFadeInEffect' : ''}`}
+      ref={ref}
+      >
       <Row>
         <Col>
         <h2>My projects</h2>
         </Col>
       </Row>
         <Row
-        className={`projectRow ${inView ? 'slideFadeInEffect' : ''}`}
-        ref={ref}
-        id="projects"
-        >
+        className="projectRow" id="projects">
             <Col>
                 <h4>Calculator</h4>
                 <Calculator />
