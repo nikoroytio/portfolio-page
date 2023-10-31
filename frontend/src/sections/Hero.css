@@ -85,3 +85,9 @@ h1 {
     scale:50%;
     animation: fadeIn 1s 4s forwards;
   }
+
+  @keyframes fadeIn {
+    to {
+      visibility: visible;
+    }
+  }
