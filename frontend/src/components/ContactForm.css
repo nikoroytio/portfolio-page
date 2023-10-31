@@ -77,6 +77,7 @@ form label:focus{
 
 .thankYouMessage p{
     margin:0;
+    margin-top: 10px;
     font-weight: bold;
     color: #f9004d;
     display: inline-block;
