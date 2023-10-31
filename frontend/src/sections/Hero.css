@@ -46,11 +46,7 @@ h1 {
     }
   }
 
-@keyframes fadeIn {
-    to {
-      visibility: visible;
-    }
-  }
+
 
 
 .typewriter-h1 {
