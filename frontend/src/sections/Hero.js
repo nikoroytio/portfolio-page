@@ -22,7 +22,7 @@ function Hero({ onScrollDown }) {
   };
 
   return (
-    <Container fluid className="p-0 hero-container">
+    <Container fluid className="p-0 hero-container" id="hero">
       <BackgroundVideo />
       <div className="overlay-content">
         <Row>
