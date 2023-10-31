@@ -15,7 +15,7 @@ function Testimonials() {
     <Container fluid className={`testimonialsContainer ${inView ? 'slideFadeInEffect' : ''}`}
     ref={ref}
     >
-        <Row className='testimonialsTitle'>
+        <Row className='testimonialsTitle' id="testimonials">
             <Col className='testimonialsItems'>
                 <h2>Working with me</h2>
             </Col>

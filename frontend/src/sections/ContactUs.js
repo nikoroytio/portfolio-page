@@ -14,7 +14,7 @@ function ContactUs() {
   return (
     <Container fluid className={`p-16 contactUs ${inView ? 'slideFadeInEffect' : ''}`}
     ref={ref}>
-        <Row className='justify-content-center'>
+        <Row className='justify-content-center' id="contact">
             <Col md={4}>
              <img src={ContactImage} alt="picture of niko röytiö" className='img-fluid'></img>
             </Col>

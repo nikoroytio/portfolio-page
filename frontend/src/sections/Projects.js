@@ -24,6 +24,7 @@ function Projects() {
         <Row
         className={`projectRow ${inView ? 'slideFadeInEffect' : ''}`}
         ref={ref}
+        id="projects"
         >
             <Col>
                 <h4>Calculator</h4>
