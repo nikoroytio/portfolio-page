@@ -12,3 +12,9 @@
 .fade-in {
     animation: fadeInOpacity 0.75s forwards; 
 }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1020;  /* Adjust this value as needed */
+}
