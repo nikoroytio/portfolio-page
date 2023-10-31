@@ -74,3 +74,30 @@ form label:focus{
 .thankYouMessage{
     margin-top: 180px;
 }
+
+.thankYouMessage p{
+    margin:0;
+    font-weight: bold;
+    color: #f9004d;
+    display: inline-block;
+    vertical-align: top;
+    border-right: .15em solid  #f9004d;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typewriter 2s steps(44, end) forwards;
+}
+
+@keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    99.99% {
+      border-right-color: white; /* Maintain the cursor color till the very end */
+    }
+    100% {
+      width: 100%;
+      border-right-color: transparent; /* Hide the cursor right after the last character */
+    }
+  }
+
