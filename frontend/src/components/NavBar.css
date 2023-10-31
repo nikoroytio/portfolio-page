@@ -12,3 +12,18 @@
 .fade-in {
     animation: fadeInOpacity 0.75s forwards; 
 }
+
+.offcanvas{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.offcanvas-title{
+    font-family: BERLINXTRA ;
+    font-size: 48px;;
+    color: #f9004d;
+}
+
+.nav-link {
+    color: rgba(122,122,122);
+    font-size: 28px;
+}
