@@ -1,6 +1,13 @@
 /*stylesheet for Contact Us section */
+
 .contactUs{
     padding-top: 60px;
     opacity: 0;
     transform: translateY(-50px);
+}
+
+.contactImage{
+    overflow: visible;
+    min-width: 100%;
+    height: auto;
 }
