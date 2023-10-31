@@ -35,7 +35,7 @@ function Hero({ onScrollDown }) {
               <img src={Instagram} alt="Instagram - logo" />
             </a>
             <a href="https://www.linkedin.com/in/nikoroytio/" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedIn} alt="LInkedIn - logo" />
+              <img src={LinkedIn} alt="LInkedin - logo" />
             </a>
             </div>
             <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
