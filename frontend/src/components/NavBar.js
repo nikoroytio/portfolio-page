@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar sticky="top">
+      <Navbar className="sticky" sticky="top">
         <Container className='flex-row-reverse fade-in'>
           <Menu onClick={handleShow} />
         </Container>
