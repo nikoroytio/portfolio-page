@@ -1,11 +1,15 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
+import { Container,} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
+import Menu from '../assets/icons/menu'
 
 function NavBar() {
   return (
-    <div>NavBar</div>
+    <Navbar>
+        <Container>
+            <Menu/>
+        </Container>
+    </Navbar>
   )
 }
 
