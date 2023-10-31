@@ -16,7 +16,7 @@ function ContactUs() {
     ref={ref}>
         <Row className='justify-content-center'>
             <Col md={4}>
-             <img src={ContactImage} alt="picture of niko röytiö"></img>
+             <img src={ContactImage} alt="picture of niko röytiö" className='img-fluid'></img>
             </Col>
             <Col md={4}>
                 <ContactForm/>
