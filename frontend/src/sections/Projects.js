@@ -43,7 +43,7 @@ function Projects() {
         >
           <Col md={6}>
             <p>These are my example Javascript projects. I have originally made them with HTML, 
-              CSS and Javascript and they can be found on my GitHub. But for this page I converted 
+              CSS and Javascript and they can be found on my <a href="https://github.com/nikoroytio" target="_blank" rel="noreferrer">GitHub</a> . But for this page I converted 
               them to react-components, so I could display them interactively. Apart from these projects 
               I have made number of Wordpress sites (like <a href="https://www.beautyparlour.fi/" target="_blank" rel="noreferrer">this </a> 
               for example), and have made code snippets for different projects, like for raspberry pi built weather station
