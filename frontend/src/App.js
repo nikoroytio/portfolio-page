@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import SplashScreen from "./components/SplashScreen"
+import Header from './sections/Header';
 import Hero from "./sections/Hero";
 import About from "./sections/About"
 import Projects from "./sections/Projects"
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+      {showAbout && <Header/>}
       {showSplash ? (
       <SplashScreen onFinished={() => setShowSplash(false)} />
     ) : (
