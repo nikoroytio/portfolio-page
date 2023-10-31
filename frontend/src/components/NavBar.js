@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Menu from '../assets/icons/menu';
@@ -13,7 +14,7 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar className="sticky" sticky="top">
+      <Navbar className="fixed-top">
         <Container className='flex-row-reverse fade-in'>
           <Menu onClick={handleShow} />
         </Container>
@@ -21,11 +22,15 @@ function NavBar() {
 
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>MENU</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <Nav.Link href="#hero">HOME</Nav.Link>
+        <Nav.Link href="#about-me">ABOUT ME</Nav.Link>
+        <Nav.Link href="#projects">PROJECTS</Nav.Link>
+        <Nav.Link href="#testimonials">TESTIMONIALS</Nav.Link>
+        <Nav.Link href="#contact">CONTACT ME</Nav.Link>
+
         </Offcanvas.Body>
       </Offcanvas>
     </div>
