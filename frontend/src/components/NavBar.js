@@ -5,11 +5,11 @@ import Menu from '../assets/icons/menu'
 
 function NavBar() {
   return (
-    <Navbar>
-        <Container>
+    <Navbar sticky="top">
+        <Container className='flex-row-reverse' >
             <Menu/>
         </Container>
-    </Navbar>
+    </Navbar >
   )
 }
 
