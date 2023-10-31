@@ -57,7 +57,7 @@ function ContactForm() {
                         submitted ? (
                             <div className='thankYouMessage'>
                                 <h2>Thank you for reaching out!</h2>
-                                <p>Your message has been sent successfully.</p>
+                                <p>I will reach out to you in 1-3 business days</p>
                             </div>
                         ) : (
                             <>
