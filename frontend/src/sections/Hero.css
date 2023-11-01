@@ -65,13 +65,20 @@ h1 {
     animation-delay: 2.5s; 
   }
 
-  .scrollDownButton svG{
+  .scrollDownButton svg{
     width: 60px;
     height: auto;
     visibility: hidden;
     animation: fadeIn 1s 4s forwards;
     margin-bottom: 30px;
+    transition: 0.3s ease;
   }
+
+  .scrollDownButton svg:hover{
+    transition: 0.3s ease;
+    scale: 1.1;
+  }
+
 
   .social-media-icons{
     display: flex;
