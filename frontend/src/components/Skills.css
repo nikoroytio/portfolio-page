@@ -1,1 +1,10 @@
 /* stylesheet for Skills section */
+
+.skillBars .col{
+    display: flex;
+    justify-content: center;
+}
+
+.skillBars p {
+    text-align: center;
+}
