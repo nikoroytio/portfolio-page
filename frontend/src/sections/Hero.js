@@ -2,9 +2,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundVideo from "../components/BackgroundVideo"
-import LinkedIn from "../assets/icons/linkedin.png"
-import Instagram from "../assets/icons/instagram.png"
-import GitHub from "../assets/icons/github.png"
+import Linkedin from '../assets/icons/linkedin'; 
+import Github from '../assets/icons/github';     
+import Instagram from '../assets/icons/instagram';
 import scrollDownPng from '../assets/icons/scrollDown.png';
 import './Hero.css';
 
@@ -26,24 +26,21 @@ function Hero({ onScrollDown }) {
       <BackgroundVideo />
       <div className="overlay-content">
         <Row>
-          <Col>
-            <div className='social-media-icons'>
+          <Col className='social-media-icons'>
             <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
-              <img src={GitHub} alt="Github - logo" />
+              <Github />
             </a>
             <a href="https://www.instagram.com/rodelanka" target="_blank" rel="noopener noreferrer">
-              <img src={Instagram} alt="Instagram - logo" />
+              <Instagram />
             </a>
             <a href="https://www.linkedin.com/in/nikoroytio/" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedIn} alt="LInkedin - logo" />
+              <Linkedin />
             </a>
-            </div>
-            <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
-            
           </Col>
         </Row>
         <Row>
           <Col>
+            <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
             <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
             <img src={scrollDownPng} alt="Scroll Down" />
