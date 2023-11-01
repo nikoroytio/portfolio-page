@@ -19,7 +19,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     z-index: 2; /* Positioned above the video */
     text-align: center;
 }
@@ -81,10 +80,29 @@ h1 {
     display: flex;
     justify-content: center;
     visibility: hidden;
-    gap: 40px;
-    scale:50%;
+    gap:40px;
+    scale: 0.3;
     animation: fadeIn 1s 4s forwards;
   }
+
+  .social-media-icons svg .outline{
+    fill:white;
+  }
+
+  .social-media-icons svg .innerBackground{
+    fill:transparent;
+  }
+
+  .social-media-icons svg{
+    transition: 0.3s ease;
+  }
+
+
+  .social-media-icons svg:hover{
+    transition: 0.3s ease;
+    transform: translateY(-17px);
+  }
+
 
   @keyframes fadeIn {
     to {
