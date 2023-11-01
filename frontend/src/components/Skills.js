@@ -1,32 +1,34 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import Table from 'react-bootstrap/Table';
 import CircularProgressBar from './CircularProgressBar';
 
 function Skills() {
   return (
-    <Container className='skillBars'>
-      <Row>
-        <Col>
-          <CircularProgressBar value={75} />
-          <p>CSS</p>
-          <CircularProgressBar value={84} />
-          <p>HTML</p>
-        </Col>
-        <Col>
-          <CircularProgressBar value={74} />
-          <p>JAVASCRIPT</p>
-          <CircularProgressBar value={52} />
-          <p>REACT</p>
-        </Col>
-        <Col>
-          <CircularProgressBar value={100} />
-          <p>VIDEO EDITING</p>
-          <CircularProgressBar value={83} />
-          <p>GRAPHIC DESIGN</p>
-        </Col>
-      </Row>
-    </Container>
-  )
+    <Table className='skillBars' id="skillTable">
+      <tbody>
+        <tr>
+          <td><CircularProgressBar value={75} />
+          <p>CSS</p></td>
+      
+          <td><CircularProgressBar value={84} />
+          <p>HTML</p></td>
+
+          <td><CircularProgressBar value={74} />
+          <p>JAVASCRIPT</p></td>
+          </tr>
+          <tr>
+          <td><CircularProgressBar value={52} />
+          <p>REACT</p></td>
+
+          <td><CircularProgressBar value={100} />
+          <p>VIDEO EDITING</p></td>
+
+          <td><CircularProgressBar value={83} />
+          <p>GRAPHIC DESIGN</p></td>
+          </tr>
+        </tbody>
+    </Table>
+  );
 }
 
-export default Skills
+export default Skills;
