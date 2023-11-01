@@ -1,9 +1,5 @@
 /* stylesheet for the Hero section */
 
-h1 {
-    color: white;
-}
-
 .hero-container {
     position: relative;
     display: flex;
@@ -61,7 +57,7 @@ h1 {
     vertical-align: top;
     border-right: .15em solid  #f9004d;
     white-space: nowrap;
-    animation: typewriter 1s steps(17, end) forwards, fadeIn 0.01s 2.5s forwards;
+    animation: typewriter 1s steps(21, end) forwards, fadeIn 0.01s 2.5s forwards;
     animation-delay: 2.5s; 
   }
 
@@ -109,6 +105,7 @@ h1 {
     transform: translateY(-17px);
   }
 
+  /* optimisation for smaller screen, because of the animations we have to use nowrap */
 
   @keyframes fadeIn {
     to {
@@ -116,3 +113,52 @@ h1 {
     }
   }
 
+  @media only screen and (max-width: 1000px) {
+    .hero-container h1{
+      font-size:68px;
+    }
+
+    .hero-container h2{
+      font-size:26px;
+    }
+
+    .social-media-icons svg{
+      scale:0.7;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .hero-container h1{
+      font-size:48px;
+    }
+
+    .hero-container h2{
+      font-size:20px;
+    }
+
+    .social-media-icons svg{
+      scale:0.7;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .hero-container h1{
+      font-size:34px;
+    }
+
+    .hero-container h2{
+      font-size:14px;
+    }
+
+    .social-media-icons svg{
+      scale:0.7;
+      margin-bottom: 100px;
+    }
+
+    .scrollDownButton svg  {
+      scale:0.7;
+  }
+
+  }
