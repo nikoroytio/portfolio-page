@@ -23,13 +23,13 @@ function AboutButtonSection() {
     return (
         <Container className='SkillInfo'>
             <Row>
-                <Col>
+                <Col md="auto">
                     <button onClick={() => changeSection('education')}>Education</button>
                 </Col>
-                <Col>
+                <Col md="auto">
                     <button onClick={() => changeSection('skills')}>Skills</button>
                 </Col>
-                <Col>
+                <Col md="auto">
                     <button onClick={() => changeSection('jobHistory')}>Job History</button>
                 </Col>
             </Row>
