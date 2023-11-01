@@ -5,7 +5,7 @@ import BackgroundVideo from "../components/BackgroundVideo"
 import Linkedin from '../assets/icons/linkedin';
 import Github from '../assets/icons/github';
 import Instagram from '../assets/icons/instagram';
-import scrollDownPng from '../assets/icons/scrollDown.png';
+import ScrollDownSVG from '../assets/icons/scrolldown';
 import './Hero.css';
 
 function Hero({ onScrollDown }) {
@@ -45,7 +45,7 @@ function Hero({ onScrollDown }) {
           <Col>
             <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
-              <img src={scrollDownPng} alt="Scroll Down" />
+              <ScrollDownSVG/>
             </a>
           </Col>
         </Row>
