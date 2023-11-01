@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     background-color: white;
-    width: 450px;
+    max-width: 450px;
+    height: auto;
     margin: 0 auto;
     border: solid 10px #f9004d;
     border-radius: 15px;
