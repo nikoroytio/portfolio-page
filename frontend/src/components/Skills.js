@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import CircularProgressBar from './CircularProgressBar';
+import './Skills.css'
 
 function Skills() {
   return (
-    <Container >
+    <Container className='skillBars'>
               <Row>
                 <Col>
                   <CircularProgressBar value={42}/>
