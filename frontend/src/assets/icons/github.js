@@ -3,7 +3,7 @@ import React from 'react'
 function github() {
 	return (
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-			width="100%" viewBox="0 0 190 190" enable-background="new 0 0 193 193" space="preserve">
+			width="100%" viewBox="0 0 190 190" enableBackground="new 0 0 193 193" space="preserve">
 			<path fill="#7A7A7A" className="outline" opacity="1.000000" stroke="none"
 				d="
 M11.263853,135.623734 

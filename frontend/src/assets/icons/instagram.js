@@ -3,7 +3,7 @@ import React from 'react';
 function Instagram() {
     return (
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="100%" viewBox="0 0 193 193" enable-background="new 0 0 193 193" space="preserve">
+            width="100%" viewBox="0 0 193 193" enableBackground="new 0 0 193 193" space="preserve">
             <path fill="#7a7a7a" className="outline" opacity="1.000000" stroke=""
                 d="
             M180.280396,143.212082 
