@@ -50,7 +50,10 @@
 
 .about-me p{
     text-align: left;
+    color: rgb(122, 122, 122);
+}
+
+#aboutparagraph{
     padding-left: 30px;
     padding-right: 30px;
-    color: rgb(122, 122, 122);
 }
