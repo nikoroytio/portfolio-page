@@ -26,7 +26,7 @@ function Hero({ onScrollDown }) {
       <BackgroundVideo />
       <div className="overlay-content">
         <Row>
-          <Col>
+          <Col md="auto">
           <div className='social-media-icons'>
               <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
                 <Github />
@@ -41,8 +41,8 @@ function Hero({ onScrollDown }) {
           <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
           </Col>
         </Row>
-        <Row>
-          <Col>
+        <Row className="justify-content-center">
+          <Col md="auto">
             <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
               <ScrollDownSVG/>
