@@ -4,7 +4,7 @@ function linkedin() {
 	return (
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 			width="100%" viewBox="0 0 193 193" enable-background="new 0 0 193 193" space="preserve">
-			<path fill="none" opacity="1.000000" stroke="none"
+			<path fill="" opacity="1.000000" stroke="none"
 				d="
                 M1.000000,69.000000 
 	C1.000000,46.000004 1.000000,23.500011 1.000000,1.000012 
