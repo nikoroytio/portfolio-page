@@ -23,7 +23,7 @@ function About() {
             </Col>
             <Col md={5}>
                 <h2>About me</h2>
-                <p>etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui.etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
+                <p id="aboutparagraph">etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui.etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
                 etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
                 etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
                 etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
