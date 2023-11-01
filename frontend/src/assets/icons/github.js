@@ -4,7 +4,7 @@ function github() {
     return (
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
             width="100%" viewBox="0 0 193 193" enable-background="new 0 0 193 193" space="preserve">
-            <path fill="none" opacity="1.000000" stroke="none"
+            <path fill="" opacity="1.000000" stroke="none"
                 d="
                 M194.000000,68.000000 
 	C194.000000,110.306229 194.000000,152.112457 194.000000,193.959351 
