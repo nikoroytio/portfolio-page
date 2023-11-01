@@ -2,8 +2,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundVideo from "../components/BackgroundVideo"
-import Linkedin from '../assets/icons/linkedin'; 
-import Github from '../assets/icons/github';     
+import Linkedin from '../assets/icons/linkedin';
+import Github from '../assets/icons/github';
 import Instagram from '../assets/icons/instagram';
 import scrollDownPng from '../assets/icons/scrollDown.png';
 import './Hero.css';
@@ -26,30 +26,32 @@ function Hero({ onScrollDown }) {
       <BackgroundVideo />
       <div className="overlay-content">
         <Row>
-          <Col className='social-media-icons'>
-            <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
-              <Github />
-            </a>
-            <a href="https://www.instagram.com/rodelanka" target="_blank" rel="noopener noreferrer">
-              <Instagram />
-            </a>
-            <a href="https://www.linkedin.com/in/nikoroytio/" target="_blank" rel="noopener noreferrer">
-              <Linkedin />
-            </a>
+          <Col>
+          <div className='social-media-icons'>
+              <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
+                <Github />
+              </a>
+              <a href="https://www.instagram.com/rodelanka" target="_blank" rel="noopener noreferrer">
+                <Instagram />
+              </a>
+              <a href="https://www.linkedin.com/in/nikoroytio/" target="_blank" rel="noopener noreferrer">
+                <Linkedin />
+              </a>
+             </div>
+          <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
             <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
-            <img src={scrollDownPng} alt="Scroll Down" />
+              <img src={scrollDownPng} alt="Scroll Down" />
             </a>
           </Col>
         </Row>
-        
-          
-    </div>  
+
+
+      </div>
     </Container>
   );
 }
