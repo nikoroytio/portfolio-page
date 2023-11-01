@@ -65,7 +65,7 @@ h1 {
     animation-delay: 2.5s; 
   }
 
-  .scrollDownButton img{
+  .scrollDownButton svG{
     width: 60px;
     height: auto;
     visibility: hidden;
