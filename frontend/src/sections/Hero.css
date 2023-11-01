@@ -16,9 +16,6 @@ h1 {
 }
 
 .overlay-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     z-index: 2; /* Positioned above the video */
     text-align: center;
 }
@@ -79,7 +76,9 @@ h1 {
   .social-media-icons{
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     visibility: hidden;
+    transform: translateY(300px);
     gap:40px;
     scale: 0.3;
     animation: fadeIn 1s 4s forwards;
@@ -109,3 +108,4 @@ h1 {
       visibility: visible;
     }
   }
+
