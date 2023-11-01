@@ -49,6 +49,9 @@ content: '';
     border-bottom: none;
 }
 
+.InfoBars .table>tbody{
+    border:none;
+}
 
 .InfoBars td{
     width:20%;
@@ -74,4 +77,21 @@ content: '';
 .fadeInEffect {
     animation: fadeInOpacity 0.75s forwards; 
 }
+
+@media only screen and (max-width: 550px) {
+    .InfoBars p {
+        font-size: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .InfoBars p {
+        font-size: 8px;
+    }
+
+    .InfoBars svg{
+      width: 60px;
+    }
+
+  }
 
