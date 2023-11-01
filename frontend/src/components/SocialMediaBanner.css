@@ -1,0 +1,19 @@
+/* stylesheet for social media banner */
+
+.socialMediaIcons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socialMediaIcons a{
+    display: inline-block; 
+    padding: 0; 
+    margin: 0; 
+    line-height: 1; 
+}
+
+.socialMediaIcons svg {
+    width: 50%;
+    height: auto;
+}
