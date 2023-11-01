@@ -1,27 +1,28 @@
-import React from 'react'
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import linkedin from '../assets/icons/linkedin';
-import github from '../assets/icons/github';
-import instagram from '../assets/icons/instagram';
+import Linkedin from '../assets/icons/linkedin'; 
+import Github from '../assets/icons/github';     
+import Instagram from '../assets/icons/instagram';
+import "./SocialMediaBanner.css";
 
 function SocialMediaBanner() {
   return (
-    <Container>
-        <Row>
-            <Col>
+    <Container >
+        <Row >
+            <Col className="socialMediaIcons">
             <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="Github - logo" />
+              <Github />
             </a>
             <a href="https://www.instagram.com/rodelanka" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="Instagram - logo" />
+              <Instagram />
             </a>
             <a href="https://www.linkedin.com/in/nikoroytio/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedin} alt="LinkedIn - logo" />
+              <Linkedin />
             </a>
             </Col>
         </Row>
     </Container>
-  )
+  );
 }
 
-export default SocialMediaBanner
+export default SocialMediaBanner;
