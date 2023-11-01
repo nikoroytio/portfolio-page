@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import SocialMediaBanner from '../components/SocialMediaBanner';
 
 function Footer() {
   return (
@@ -8,6 +9,7 @@ function Footer() {
             <Col>
             </Col>
             <Col>
+              <SocialMediaBanner/>
             </Col>
             <Col>
             </Col>
