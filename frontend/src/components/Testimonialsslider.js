@@ -23,12 +23,17 @@ function Testimonialsslider() {
             <img src={TestimonialsImage} alt="" />
             <Carousel.Caption>
               <img src={QuotationMarks} />
-                <p>Cooperation with Niko has been rewarding. The contents of the trainings have been exactly 
-                  what was agreed and the micro-enterprises that were the target group have received tools for 
-                  developing their business from the trainings. Trainer Niko is approachable and you dare to ask 
-                  him any questions that come to mind. The atmosphere of the trainings has 
-                  been relaxed and immediate.</p>
-                  <i>Mia Koivujoki, R&D expert, Savonia University of Applied Sciences</i>
+                <p>We can warmly recommend GoBros, which acted as a valuable partner in Savo Yrittäjie's 
+                  "Company experts succeed" project. GoBros and Niko's trainings have been carefully planned and implemented. 
+                  Their deep knowledge of digital tools and techniques has been impressive. The trainers have demonstrated 
+                  both wide-ranging competence and specialized competence, which has given the trainees the opportunity to 
+                  use the latest digital solutions. The cooperation with GoBros and Niko has been excellent. Their team has always been 
+                  approachable, responsive and ready to meet our needs. Their ability to adapt to different situations and 
+                  their excellent communication have been key to effective cooperation. We warmly recommend GoBros' services to 
+                  everyone who wants to improve their digital skills or develop their companies' digital capabilities. 
+                  Their expertise, professional approach and ability to produce customized solutions make them an excellent 
+                  partner in the development of digital competence</p>
+                <i>Mia Koivujoki, R&D expert, Savonia University of Applied Sciences</i>
               
             </Carousel.Caption>
           </Carousel.Item>
