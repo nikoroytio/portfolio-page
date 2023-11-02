@@ -1,8 +1,14 @@
 import React from 'react';
 import './Timeline.css';
 
+
+// Timeline functional component that receives an array of event objects.
+// It maps over these events to create individual TimelineEvent components.
+
 const Timeline = ({ events }) => {
     return (
+
+        // The container for the timeline which will hold all the events.
         <div className="timeline-container">
             {events.map((event, index) => (
                 <TimelineEvent key={index} event={event} />
@@ -10,6 +16,9 @@ const Timeline = ({ events }) => {
         </div>
     );
 }
+
+// The TimelineEvent functional component that receives a single event object.
+// It renders the visual representation of the event in the timeline.
 
 const TimelineEvent = ({ event }) => {
     return (
