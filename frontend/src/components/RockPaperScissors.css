@@ -1,14 +1,13 @@
 /* stylesheet for rock paper scissors game */
 
-
 #containerRps button {
-    scale: 50%;
+    transform: scale(50%); /* we are using transform, because pictures are large */
     margin: auto;
     transition: 0.5s ease-out;
 }
 
 #containerRps button:hover{
-    scale: 60%;
+    transform: scale(60%);
 }
 
 #results {
