@@ -14,26 +14,26 @@ function App() {
 
   // state for controlling the visibility of the splash screen 
    const [showSplash, setShowSplash] = useState(true);
-   // state for controlling the visibility of the about section
-   const [showAbout, setShowAbout] = useState(false);
+   // state for controlling the visibility of the sections
+   const [showSection, setShowSection] = useState(false);
 
    const handleScrollDown = () => {
-    setShowAbout(true);
+    setShowSection(true);
   };
 
   return (
     <div className="App">
-      {showAbout && <Header/>}
+      {showSection && <Header/>}
       {showSplash ? (
       <SplashScreen onFinished={() => setShowSplash(false)} />
     ) : (
         <Hero onScrollDown={handleScrollDown}/>
     )}
-      {showAbout && <About />}
-      {showAbout && <Projects/>}
-      {showAbout && <Testimonials/>}
-      {showAbout && <ContactUs/>}
-      {showAbout && <Footer/>}
+      {showSection && <About />}
+      {showSection && <Projects/>}
+      {showSection && <Testimonials/>}
+      {showSection && <ContactUs/>}
+      {showSection && <Footer/>}
     </div>
   );
 }
