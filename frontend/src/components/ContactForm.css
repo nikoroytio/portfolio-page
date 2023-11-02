@@ -1,6 +1,5 @@
 /*stylesheet for Contact Form */
 
-
 .formArea h2 {
     font-size: 48px;
     margin-top: 20px;
@@ -36,10 +35,7 @@ form label:focus{
     box-shadow: 0 0 0 0.25rem #f9004d25;
 }
 
-form label:focus{
-    background-color: blue;
-}
-
+/*because we are using floating inputs, additional styling on floating is needed */
 .form-floating>.form-control:not(:placeholder-shown)~label {
     color: rgb(147, 147, 147); 
 }
