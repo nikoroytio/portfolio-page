@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './EtchASketch.css';
 
+//If you use this page as your base, I hope you will change projects to something of your own
+// But here is an example of EtchASketch game
+
 function EtchASketch() {
+    //set initial grid size
     const [squares, setSquares] = useState(Array(16 * 16).fill(false));
     const [gridSize, setGridSize] = useState(16);
     const [isDrawing, setIsDrawing] = useState(false); // To track if mouse button is pressed
