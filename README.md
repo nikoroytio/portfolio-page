@@ -80,7 +80,7 @@ after that we can move on to cloning repository and installing depencies.
   ```sh
     git clone https://github.com/nikoroytio/portfolio-page.git
   ```
-2. Install NPM packages
+2. Install NPM packages. Remember to install them in frontend and backend if you copy whole project  
   ```sh
     npm install
   ```
@@ -115,13 +115,15 @@ Folder structure:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
-
+Project is divided to backend and frontend. In the frontend we have react app.  
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
 As structured, assets folder have images, videos and icons needed for the project.  
 In component folder we have invidual components, like Rock Paper Scissors game. Components required .js and .css is in this folder.  
-In section folder we have every section. They are named descriptiove way, for example "About". Section has the section structure and component imports.  
+In section folder we have every section. They are named descriptive way, for example "About". Section has the section structure and component imports.  
 
 Page stylesheets are are used in descending way. So App.css sets overall rules for the whole page's look. Sections own .css files have section specific styling and invidual component styling is found in each components .css-file.  
+
+Backend has server.js for controlling emails from the contact form. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
