@@ -5,8 +5,8 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <Container fluid>
-        <Row className='footerContainer'>
+    <Container fluid className='footerContainer'>
+        <Row className='footerRow'>
             <Col>
             <p>&copy; Niko Röytiö 2023</p>
             </Col>
