@@ -104,16 +104,16 @@ This project can be used as a starting point, or template to your own portfolio.
 Folder structure:  
 ├── backend  
 └── frontend/  
-&nbsp;&nbsp;├── node_modules  
-&nbsp;&nbsp;├── public/  
-&nbsp;&nbsp;│ &nbsp;&nbsp;  └── fonts  
-&nbsp;&nbsp;└── src/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
+&nbsp;&nbsp;&nbsp;&nbsp;├── node_modules  
+&nbsp;&nbsp;&nbsp;&nbsp;├── public/  
+&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── fonts  
+&nbsp;&nbsp;&nbsp;&nbsp;└── src/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
 Project is divided to backend and frontend. In the frontend we have react app.  
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
