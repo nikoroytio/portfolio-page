@@ -2,6 +2,11 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 import CircularProgressBar from './CircularProgressBar';
 
+
+// Here we are using table as display for skillbars, because it scaled better in smaller screens
+// Depending on your need, you can change the structure to classic Container, Row & Col if you have more 
+// skills to display and then they stack better
+
 function Skills() {
   return (
     <Table className='skillBars' id="skillTable">
