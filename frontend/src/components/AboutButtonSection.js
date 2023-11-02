@@ -5,6 +5,11 @@ import Skills from './Skills'
 import MyWorkHistory from './WorkHistory';
 import "./AboutButtonSection.css"
 
+
+// Here we make slight exception how we handle our css filing. we use this .js-files 
+//.css file to affect skills etc, because of their positioning. You can create your own Skills.css
+//if you want to modify the structure
+
 function AboutButtonSection() {
   // State to manage which section (education, skills, job history) is displayed
     const [selectedSection, setSelectedSection] = useState('education');
