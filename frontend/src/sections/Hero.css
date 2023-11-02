@@ -67,7 +67,7 @@
 
   .scrollDownButton svg:hover{
     transition: 0.3s ease;
-    scale: 1.1;
+    transform: scale(1.1);
   }
 
   .social-media-icons{
@@ -116,7 +116,7 @@
     }
 
     .social-media-icons svg{
-      scale:0.7;
+      transform: scale(0.7);
       margin-bottom: 20px;
     }
   }
@@ -131,7 +131,6 @@
     }
 
     .social-media-icons svg{
-      scale:0.7;
       margin-bottom: 50px;
     }
   }
@@ -146,12 +145,11 @@
     }
 
     .social-media-icons svg{
-      scale:0.7;
       margin-bottom: 100px;
     }
 
     .scrollDownButton svg  {
-      scale:0.7;
+      transform: scale(0.7);
   }
 
   }
