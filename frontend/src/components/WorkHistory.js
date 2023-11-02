@@ -16,6 +16,8 @@ const MyWorkHistory = () => {
          website and online store programming, UIX design and Search Engine Optimization in several projects.` }
     ];
 
+    // The render method returns the JSX for the work history section.
+    // The 'Timeline' component is called and the 'events' array is passed to it as a prop.
     return (
         <div className='workHistory'>
             <Timeline events={events} />
