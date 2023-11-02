@@ -55,7 +55,7 @@
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
+* [![Node][Node.js]][Node-url]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -80,7 +80,7 @@ after that we can move on to cloning repository and installing depencies.
   ```sh
     git clone https://github.com/nikoroytio/portfolio-page.git
   ```
-2. Install NPM packages
+2. Install NPM packages. Remember to install them in frontend and backend if you copy whole project  
   ```sh
     npm install
   ```
@@ -100,26 +100,30 @@ after that we can move on to cloning repository and installing depencies.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project can be used as a starting point, or template to your own portfolio.
+This project can be used as a starting point, or template to your own portfolio.  
 Folder structure:  
-├── node_modules  
-├── public/  
-│ &nbsp;&nbsp;  └── fonts  
-└── src/  
-&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
-&nbsp;&nbsp;&nbsp;&nbsp;├── components  
-&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
+├── backend  
+└── frontend/  
+&nbsp;&nbsp;&nbsp;&nbsp;├── node_modules  
+&nbsp;&nbsp;&nbsp;&nbsp;├── public/  
+&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── fonts  
+&nbsp;&nbsp;&nbsp;&nbsp;└── src/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
-
+Project is divided to backend and frontend. In the frontend we have react app.  
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
 As structured, assets folder have images, videos and icons needed for the project.  
 In component folder we have invidual components, like Rock Paper Scissors game. Components required .js and .css is in this folder.  
-In section folder we have every section. They are named descriptiove way, for example "About". Section has the section structure and component imports.  
+In section folder we have every section. They are named descriptive way, for example "About". Section has the section structure and component imports.  
 
 Page stylesheets are are used in descending way. So App.css sets overall rules for the whole page's look. Sections own .css files have section specific styling and invidual component styling is found in each components .css-file.  
+
+Backend has server.js for controlling emails from the contact form. We use dotenv, so remember to create your own .env file where you can store your API_KEY and toher sensitive information. I nthis example we use SendGrid to handle emails.    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
@@ -155,3 +159,5 @@ Project Link: <a href="https://github.com/nikoroytio/portfolio-page">HERE</a>
 [React-url]: https://reactjs.org/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
+[Node.js]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
+[Node-url]: https://nodejs.org/en
