@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, FloatingLabel } from 'react-bootstrap';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./ContactForm.css"
 
 function ContactForm() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const [validated, setValidated] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -102,6 +108,9 @@ function ContactForm() {
                                     <Form.Group className="mb-3">
                                         <Form.Check
                                             required
+                                            id="termsAndConditions" 
+                                            name="termsAndConditions" 
+                                            type="checkbox"
                                             label="Agree to terms and conditions"
                                             feedback="You must agree before submitting."
                                             feedbackType="invalid"
