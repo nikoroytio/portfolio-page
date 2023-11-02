@@ -89,6 +89,10 @@ form label:focus{
     animation: typewriter2 2s steps(44, end) forwards;
 }
 
+.termsAndConditions {
+    color: white;
+}
+
 @keyframes typewriter2 {
     0% {
       width: 0;
