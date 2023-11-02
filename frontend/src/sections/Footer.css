@@ -1,13 +1,18 @@
 /* stylesheet for footer */
 
-.footerContainer {
-    margin-top: 40px;
-    margin-bottom: 30px;
+.footerContainer{
+    background-color: rgba(23, 23, 23, 0.4);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.footerRow {
     display: flex;
     align-items: center;
+  
 }
 
 .footerContainer p{
     margin-top: 20px;
     color: rgba(122, 122, 122);
+    margin-left: 40px ;
 }
