@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Calculator.css';
 
+//If you use this page as your base, I hope you will change projects to something of your own
+// But here is an example of Calculator
+
 function Calculator() {
     const [displayValue, setDisplayValue] = useState('0');
     const [storedValue, setStoredValue] = useState(null);
@@ -61,12 +64,6 @@ function Calculator() {
             }
         }
 
-        if (lastOperationWasEqual) {
-            setLastOperationWasEqual(false);
-            setStoredValue(null);
-            setStoredOperator(null);
-        }
-    
         else {
             newDisplayValue = newDisplayValue === "0" ? numberstr : newDisplayValue + numberstr;
         }
