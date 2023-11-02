@@ -25,15 +25,15 @@ function Projects() {
       </Row>
         <Row
         className="projectRow" id="projects">
-            <Col>
+            <Col >
                 <h4>Calculator</h4>
                 <Calculator />
             </Col>
-            <Col className='etchASketch'>
+            <Col md="auto" className='etchASketch'>
               <h4>Etch-A-Sketch</h4>
               <EtchASketch/>
             </Col>
-            <Col>
+            <Col xxl={4}>
               <h4>Rock Paper Scissors</h4>
               <RockPaperScissors/>
             </Col>
