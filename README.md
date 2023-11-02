@@ -102,16 +102,18 @@ after that we can move on to cloning repository and installing depencies.
 
 This project can be used as a starting point, or template to your own portfolio.
 Folder structure:  
-├── node_modules  
-├── public/  
-│ &nbsp;&nbsp;  └── fonts  
-└── src/  
-&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
-&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
-&nbsp;&nbsp;&nbsp;&nbsp;├── components  
-&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
+├── backend  
+└── frontend/  
+&nbsp;&nbsp;├── node_modules  
+&nbsp;&nbsp;├── public/  
+&nbsp;&nbsp;│ &nbsp;&nbsp;  └── fonts  
+&nbsp;&nbsp;└── src/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── assets/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── icons  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  ├── image  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── videos  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
 
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
