@@ -30,7 +30,7 @@ function Calculator() {
     };
 
     const isDisplayMaxLength = () => {
-        return displayValue.length > 7;  
+        return displayValue.length >= 7;  
     };
 
     const currentNumberHasDot = () => {
@@ -46,8 +46,13 @@ function Calculator() {
     };
 
     const handleNumberInput = (numberstr) => {
-        if (isDisplayMaxLength()) return;
+        
         let newDisplayValue = displayValue;
+        
+        if (isDisplayMaxLength()) {
+            alert("Max display character limit is 7.");
+            return;
+        }
 
         if (lastOperationWasEqual) {
             setLastOperationWasEqual(false);
