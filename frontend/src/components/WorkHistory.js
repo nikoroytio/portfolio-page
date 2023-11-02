@@ -1,7 +1,7 @@
 import React from 'react';
-import "./WorkHistory.css"
 import Timeline from './Timeline';
 
+// Here you put actual info, that shows in timeline. If you want to edit what the timeline includes, edit Timeline.js
 const MyWorkHistory = () => {
     const events = [
         { date: '06/2009 - 08/2014', company: 'several different employers', position: 'Summer jobs',  description: `I started my 
