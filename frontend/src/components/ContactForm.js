@@ -7,16 +7,20 @@ function ContactForm() {
 
     const [showOffcanvas, setShowOffcanvas] = useState(false);
 
+    // State hooks for form validation and submission status
     const [validated, setValidated] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
+    // Function to handle form submission
     const handleSubmit = async (event) => {
         event.preventDefault(); // Prevent default form submission regardless of validation status
 
         const form = event.currentTarget;
 
+        // Check form validation
         if (form.checkValidity() === false) {
             event.stopPropagation();
+
         } else {
             // If form is valid, prepare and send data to server
             const formData = {
@@ -27,6 +31,7 @@ function ContactForm() {
             };
 
             try {
+                // Send the form data to the server
                 const response = await fetch('http://localhost:3001/send-email', {
                     method: 'POST',
                     headers: {
@@ -35,23 +40,22 @@ function ContactForm() {
                     body: JSON.stringify(formData),
                 });
 
+                 // Check if the request was successful
                 if (response.ok) {
                     console.log('Email sent successfully.');
                     setSubmitted(true);
-                    // TODO: Provide visual feedback to the user (e.g., a success message or modal)
                 } else {
                     console.log('Error sending email.');
-                    // TODO: Provide visual feedback to the user (e.g., an error message or modal)
                 }
             } catch (error) {
                 console.error('Failed to send email:', error);
-                // TODO: Provide visual feedback to the user (e.g., an error message or modal)
             }
         }
 
         setValidated(true); // This will trigger validation feedback on the form
     };
 
+    // The component's rendered JSX
     return (
         <Container>
             <Row>
