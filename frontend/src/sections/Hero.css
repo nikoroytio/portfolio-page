@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* we want the hero section to take 100% viewporth height*/
     padding-bottom: 30px;
     margin-bottom: 40px;
 }
@@ -15,8 +15,6 @@
     z-index: 2; /* Positioned above the video */
     text-align: center;
 }
-
-
 
 .overlay-content h2 {
     margin-top: 20px;
@@ -37,9 +35,6 @@
       border-right-color: transparent; /* Hide the cursor right after the last character */
     }
   }
-
-
-
 
 .typewriter-h1 {
     display: inline-block;
@@ -75,7 +70,6 @@
     scale: 1.1;
   }
 
-
   .social-media-icons{
     display: flex;
     justify-content: center;
@@ -98,7 +92,6 @@
   .social-media-icons svg{
     transition: 0.3s ease;
   }
-
 
   .social-media-icons svg:hover{
     transition: 0.3s ease;
