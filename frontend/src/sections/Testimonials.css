@@ -2,7 +2,7 @@
 
 .testimonialsContainer{
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-50px); /* we set inital position, so the section fades and drops in view*/
 }
 
 .testimonialsTitle {
