@@ -4,12 +4,16 @@ import paperImage from '../assets/image/paper.webp';
 import scissorsImage from '../assets/image/scissors.webp';
 import './RockPaperScissors.css';
 
+//If you use this page as your base, I hope you will change projects to something of your own
+// But here is an example of Rock Paper Scissors game
+
 function RockPaperScissors() {
     const [playerScore, setPlayerScore] = useState(0);
     const [computerScore, setComputerScore] = useState(0);
     const [resultText, setResultText] = useState('');
     const [showRematch, setShowRematch] = useState(false);
 
+    // calculate computers choice
     const getComputerChoice = () => {
         const options = ["rock", "paper", "scissors"];
         return options[Math.floor(Math.random() * options.length)];
