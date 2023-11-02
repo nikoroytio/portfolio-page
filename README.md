@@ -123,7 +123,7 @@ In section folder we have every section. They are named descriptive way, for exa
 
 Page stylesheets are are used in descending way. So App.css sets overall rules for the whole page's look. Sections own .css files have section specific styling and invidual component styling is found in each components .css-file.  
 
-Backend has server.js for controlling emails from the contact form. 
+Backend has server.js for controlling emails from the contact form. We use dotenv, so remember to create your own .env file where you can store your API_KEY and toher sensitive information  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
