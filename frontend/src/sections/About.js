@@ -15,6 +15,7 @@ function About() {
   }, []);
 
   return (
+    // Container with dynamic classes for fade-in effect
     <Container fluid className={`p-16 about-container fade-in ${visible ? 'visible' : ''}`}>
         <Row className="about-me" id="about-me">
 
