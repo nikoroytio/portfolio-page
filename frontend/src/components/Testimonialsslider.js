@@ -3,6 +3,7 @@ import TestimonialsImage from '../assets/image/testimonialsbackground.webp'
 import QuotationMarks from "../assets/icons/quotation-marks.webp"
 import "./Testimonialsslider.css"
 
+//Carousel documentation you can found in https://react-bootstrap.netlify.app/docs/components/carousel/ */
 function Testimonialsslider() {
     return (
         <Carousel fade className='carousel'>
