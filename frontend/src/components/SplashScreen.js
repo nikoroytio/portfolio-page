@@ -22,14 +22,15 @@ function SplashScreen({ onFinished }) {
 
   return (
     <div className="splash-screen">
-      <video 
-        width="100%" 
-        height="100%" 
+      <video
+        width="100%"
+        height="100%"
         autoPlay
         muted
         onEnded={() => setVideoEnded(true)}
       >
         <source src={SplashScreenVideo} type="video/mp4" />
+         {/* A fallback message for browsers that do not support the video tag. */}
         Your browser does not support the video tag.
       </video>
     </div>
