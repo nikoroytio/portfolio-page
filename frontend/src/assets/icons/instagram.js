@@ -1,5 +1,8 @@
 import React from 'react';
 
+//In svg-icons we use className outline to refer to icon lines, and className innerBackground for 
+//the icon background inside the circle for easier css styling
+
 function Instagram() {
     return (
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
