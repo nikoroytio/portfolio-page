@@ -5,10 +5,7 @@ import "./ContactForm.css"
 
 function ContactForm() {
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const [showOffcanvas, setShowOffcanvas] = useState(false);
 
     const [validated, setValidated] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -108,10 +105,20 @@ function ContactForm() {
                                     <Form.Group className="mb-3">
                                         <Form.Check
                                             required
-                                            id="termsAndConditions" 
-                                            name="termsAndConditions" 
+                                            id="termsAndConditions"
+                                            name="termsAndConditions"
                                             type="checkbox"
-                                            label="Agree to terms and conditions"
+                                            label={
+                                                <span>
+                                                    Agree to&nbsp;
+                                                    <span
+                                                        style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                                                        onClick={() => setShowOffcanvas(true)}
+                                                    >
+                                                        terms and conditions
+                                                    </span>
+                                                </span>
+                                            }
                                             feedback="You must agree before submitting."
                                             feedbackType="invalid"
                                         />
@@ -123,6 +130,45 @@ function ContactForm() {
                     }
                 </Col>
             </Row>
+            <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className="termsAndConditions">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Terms and Conditions</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    Last updated: 02.11.2023<br/>
+                    <br/>
+                    <b>1. Introduction</b><br/>
+
+                    By using the contact form on nikoroytio.com, you agree to the following terms and conditions. 
+                    Please read them carefully. If you do not agree to these terms, please refrain from using the 
+                    contact form.
+                    <br/>
+                    <b>2. Privacy</b><br/>
+
+                    When you use our contact form, you provide us with certain personal information, specifically 
+                    your email address. We promise to respect your privacy. We will not sell, distribute, or misuse 
+                    your email address in any way. It will solely be used to respond to your inquiries or comments.
+                    <br/>
+                    <b>3. Data Protection</b><br/>
+
+                    Your email address and any other information you provide through the contact form will be stored 
+                    securely. We will take reasonable precautions to prevent the loss, misuse, or alteration of the 
+                    information you provide.
+                    <br/>
+                    <b>4. Changes to These Terms</b><br/>
+
+                    We may revise these terms and conditions from time to time. Any changes will be immediately 
+                    posted on this page. By continuing to use the contact form after changes to these terms are 
+                    made, you agree to be bound by the revised terms.
+                    <br/>
+                    <b>5. Contact</b><br/>
+
+                    For any questions about these terms and conditions or any issues related to nikoroytio.com, 
+                    please contact us at roytioniko@gmail.com or phone +358 40 546 8496.
+
+
+                </Offcanvas.Body>
+            </Offcanvas>
         </Container>
     );
 }
