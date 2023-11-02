@@ -130,7 +130,7 @@ function ContactForm() {
                     }
                 </Col>
             </Row>
-            <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)} className="termsAndConditions">
+            <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)} placement="start" className="termsAndConditions">
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Terms and Conditions</Offcanvas.Title>
                 </Offcanvas.Header>
