@@ -15,8 +15,6 @@
 }
 .AboutImage{
     overflow: visible;
-    min-width: 100%;
-    height: auto;
 }
 
 
@@ -58,3 +56,29 @@
     padding-right: 30px;
     text-align: left;
 }
+
+@media only screen and (max-width: 1600px) {
+    
+    #aboutparagraph{
+        font-size: 14px ;
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    
+    .AboutImage{
+        width: 50%;
+    }
+    .imgColumn{
+        display: flex;
+        justify-content: center;  /* Horizontally center the content */
+        align-items: center; 
+    }
+  } 
+
+  @media only screen and (max-width: 800px) {
+    
+    .AboutImage{
+        min-width: 100%;
+    }
+  } 
