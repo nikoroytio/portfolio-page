@@ -1,4 +1,7 @@
 /*stylesheet for About section */
+
+/*this animation is for the section to show after clicking scroll down button on hero section */
+
 .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-out; /* Adjust duration as needed */
@@ -47,15 +50,18 @@
 }
 
 .about-me p{
-
     color: rgb(122, 122, 122);
 }
+
+/* we are using id for about sections paragraph, so we can avoid style overrides */
 
 #aboutparagraph{
     padding-left: 30px;
     padding-right: 30px;
     text-align: left;
 }
+
+
 
 @media only screen and (max-width: 1600px) {
     
@@ -64,6 +70,7 @@
     }
   }
 
+   /* here we change the positioning of the about image, cause it easily gets too small in certain width */
   @media only screen and (max-width: 1400px) {
     
     .AboutImage{
@@ -76,6 +83,7 @@
     }
   } 
 
+  /* we use this to get back to defaul styling in image */
   @media only screen and (max-width: 800px) {
     
     .AboutImage{
