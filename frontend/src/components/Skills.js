@@ -7,6 +7,8 @@ import CircularProgressBar from './CircularProgressBar';
 // Depending on your need, you can change the structure to classic Container, Row & Col if you have more 
 // skills to display and then they stack better
 
+// Table documentation https://react-bootstrap.netlify.app/docs/components/table
+
 function Skills() {
   return (
     <Table className='skillBars' id="skillTable">
