@@ -9,7 +9,6 @@
     margin: 0 auto;
     border: solid 10px #f9004d;
     border-radius: 15px;
-
 }
 
 .square {
@@ -23,7 +22,7 @@
 }
 .sketchButtons {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
 }
 .sketchButtons button{
     background-color: #f9004d;
