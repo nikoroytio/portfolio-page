@@ -18,10 +18,10 @@ function About() {
     <Container fluid className={`p-16 about-container fade-in ${visible ? 'visible' : ''}`}>
         <Row className="about-me" id="about-me">
 
-            <Col md={3}>
+            <Col xxl={3} className='imgColumn'>
                 <img src={AboutImage}  className="AboutImage img-fluid" alt="picture of Niko Roytio" />
             </Col>
-            <Col md={5}>
+            <Col xxl={5}>
                 <h2>About me</h2>
                 <p id="aboutparagraph">"I am Niko,an enthusiastic IT-engineering student at the University of Applied 
                 Sciences with a keen interest in web development and coding, which I've pursued passionately as a 
