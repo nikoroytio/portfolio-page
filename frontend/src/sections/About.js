@@ -23,10 +23,20 @@ function About() {
             </Col>
             <Col md={5}>
                 <h2>About me</h2>
-                <p id="aboutparagraph">etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui.etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
-                etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
-                etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
-                etsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu duietsis ipsum id feassa leo condimentum nibh, sed aliquam metus enim eu dui
+                <p id="aboutparagraph">"I am Niko,an enthusiastic IT-engineering student at the University of Applied 
+                Sciences with a keen interest in web development and coding, which I've pursued passionately as a 
+                hobby for the past 5 years. My diverse professional background spans from video production to training
+                and consulting in marketing.My family consist of partner, daughter and lovely dog Malla. Free time I spend with Dungeons and Dragons, playing guitar and spending
+                time with my daughter.
+
+                Working with micro enterprises I have always wanted to equip them with the best information, but at 
+                the same time I wanted my training to be very easily approachable, ensuring everyone feels comfortable
+                asking questions and contributing ideas, fostering a relaxed and engaging training environment. 
+                So I´m not afraid to work with customers.
+
+                Whether brainstorming innovative strategies or delivering reliable foundational solutions, customer 
+                satisfaction has been at the forefront. I take immense pride in the consistent positive feedback, 
+                with clients commending our proactive approach, reliability, and unwavering dedication to excellence.
                 </p>
               <AboutButtonSection/>
                
