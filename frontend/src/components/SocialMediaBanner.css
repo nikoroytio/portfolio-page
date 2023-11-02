@@ -16,7 +16,7 @@
     transition: 0.3s ease;
 }
 
-
+/* in the svgs everything outside of circle is set to empty, so without that class it still fills only the circle*/
 .socialMediaIcons svg:hover{
     transform: translateY(-7px);
     fill: #f9004d;
