@@ -35,6 +35,7 @@ content: '';
     padding-top: 15px;
 } 
 
+/* here we start styling components inside this component */
 .InfoBars p {
     white-space: nowrap;
     padding: 0;
