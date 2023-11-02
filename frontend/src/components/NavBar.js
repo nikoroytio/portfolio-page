@@ -7,6 +7,7 @@ import Menu from '../assets/icons/menu';
 import './NavBar.css';
 
 function NavBar() {
+  // variables for hiding and displaying offcanvas menu. More documentation on https://react-bootstrap.netlify.app/docs/components/offcanvas
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
