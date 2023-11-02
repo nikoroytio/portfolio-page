@@ -5,7 +5,7 @@
     padding-top: 40px;
     text-align: center;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-50px); /* we set inital position, so the section fades and drops in view*/
 }
 
 .projectContainer h2 {
@@ -15,7 +15,7 @@
     background: linear-gradient(to right, hsl(0, 0%, 30%) 0, #f9004d 10%, hsl(0, 0%, 30%) 20%);
     background-size: 200% 100%; 
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* For webkit browsers, creates the gradient text effect */
     animation: shine 4s infinite linear;
 }
 
@@ -36,7 +36,7 @@
 
 .projectInfo {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-50px); /* we set inital position, so the section fades and drops in view*/
   display: flex;
   justify-content: center;
   margin-top: 30px;
