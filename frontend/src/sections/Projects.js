@@ -29,6 +29,7 @@ function Projects() {
                 <h4>Calculator</h4>
                 <Calculator />
             </Col>
+            {/* we are using lg and xxl to stack columns better in smaller screens, so the actual component stays interactive */}
             <Col lg={4} className='etchASketch ' >
               <h4>Etch-A-Sketch</h4>
               <EtchASketch/>
@@ -39,7 +40,7 @@ function Projects() {
             </Col>
         </Row>
         <Row className={`projectInfo ${inView ? 'slideFadeInEffect' : ''}`}
-        ref={ref}
+        ref={ref} // The same ref is used here for a consistent trigger point
         >
           <Col md={6}>
             <p>These are my example Javascript projects. I have originally made them with HTML, 
