@@ -1,7 +1,7 @@
 /* stylesheet for the Hero section */
 
 .hero-container {
-    position: relative;
+    position: relative; /* this keeps backgroundvideos ending frame nicely centered */
     display: flex;
     justify-content: center;
     align-items: flex-end;
