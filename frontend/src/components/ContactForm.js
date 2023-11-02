@@ -56,6 +56,7 @@ function ContactForm() {
     };
 
     // The component's rendered JSX
+    //More on Bootsraps form https://react-bootstrap.netlify.app/docs/forms/overview
     return (
         <Container>
             <Row>
@@ -134,6 +135,8 @@ function ContactForm() {
                     }
                 </Col>
             </Row>
+            {/* I put offcanvas within the container because of correct structure, but feel free to modify it anyway you want */}
+            {/* More documentation on https://react-bootstrap.netlify.app/docs/components/offcanvas */}
             <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)} placement="start" className="termsAndConditions">
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Terms and Conditions</Offcanvas.Title>
