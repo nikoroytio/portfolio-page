@@ -1,5 +1,4 @@
 // The hero component. Displays the main introduction and social links of the website.
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundVideo from "../components/BackgroundVideo"
 import Linkedin from '../assets/icons/linkedin';
