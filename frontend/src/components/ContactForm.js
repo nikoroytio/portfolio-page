@@ -31,7 +31,7 @@ function ContactForm() {
             };
 
             const API_URL = process.env.VERCEL_ENV === 'production' 
-            ? 'https://roytioniko.com/api/'
+            ? 'https://your-domain.com/api/send-email'
             : 'http://localhost:3001/';
 
             try {
