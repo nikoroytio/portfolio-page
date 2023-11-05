@@ -31,7 +31,7 @@ function ContactForm() {
             };
 
             const API_URL = process.env.NODE_ENV === 'production' 
-            ? 'https://your-vercel-app.vercel.app/api/' 
+            ? 'https://roytioniko.com/api/' 
             : 'http://localhost:3001/';
 
             try {
