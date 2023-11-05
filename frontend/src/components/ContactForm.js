@@ -30,9 +30,13 @@ function ContactForm() {
                 message: form.messageInput.value
             };
 
+            const API_URL = process.env.NODE_ENV === 'production' 
+            ? 'https://your-vercel-app.vercel.app/api/' 
+            : 'http://localhost:3001/';
+
             try {
                 // Send the form data to the server
-                const response = await fetch('http://localhost:3001/send-email', {
+                const response = await fetch(`${API_URL}send-email`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
