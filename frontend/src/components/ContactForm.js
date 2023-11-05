@@ -30,7 +30,7 @@ function ContactForm() {
                 message: form.messageInput.value
             };
 
-            const API_URL = process.env.NODE_ENV === 'production' 
+            const API_URL = process.env.VERCEL_ENV === 'production' 
             ? 'https://roytioniko.com/api/'
             : 'http://localhost:3001/';
 
