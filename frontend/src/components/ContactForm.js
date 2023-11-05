@@ -30,7 +30,7 @@ function ContactForm() {
                 message: form.messageInput.value
             };
 
-            const API_URL = REACT_APP_VERCEL_ENV === 'production' 
+            const API_URL = process.env.VERCEL_ENV === 'production' 
             ? 'https://your-domain.com/api/send-email'
             : 'http://localhost:3001/';
 
