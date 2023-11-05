@@ -31,7 +31,7 @@ function ContactForm() {
             };
 
             const API_URL = process.env.REACT_APP_VERCEL_ENV === 'production' 
-            ? 'https://your-domain.com/api/'
+            ? 'https://roytioniko.com/api/'
             : 'http://localhost:3001/';
 
             try {
