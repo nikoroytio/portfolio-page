@@ -111,6 +111,7 @@ Folder structure:
 ├── backend  
 └── frontend/  
 &nbsp;&nbsp;&nbsp;&nbsp;├── node_modules  
+&nbsp;&nbsp;&nbsp;&nbsp;├── api/  
 &nbsp;&nbsp;&nbsp;&nbsp;├── public/  
 &nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;  └── fonts  
 &nbsp;&nbsp;&nbsp;&nbsp;└── src/  
@@ -121,15 +122,17 @@ Folder structure:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── components  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── sections  
       
-Project is divided to backend and frontend. In the frontend we have react app.  
+Project is has two configurations. One for Vercel deployment, which uses /api folder in frontend, so you only need frontend if you want to use Vercel for deployment.  
+Backend is for local development and uses server.js for email handling. We have contact form in page, so in local you can test thank you messages etc. with backend.  
+Backend has server.js for controlling emails from the contact form. We use dotenv, so remember to create your own .env file where you can store your API_KEY and toher sensitive information. In this example we use SendGrid to handle emails.  
+  
 In the public folder we have usual index.html for our project, we have added folder for custom fonts. You can change them to your own liking.  
 As structured, assets folder have images, videos and icons needed for the project.  
 In component folder we have invidual components, like Rock Paper Scissors game. Components required .js and .css is in this folder.  
 In section folder we have every section. They are named descriptive way, for example "About". Section has the section structure and component imports.  
 
 Page stylesheets are are used in descending way. So App.css sets overall rules for the whole page's look. Sections own .css files have section specific styling and invidual component styling is found in each components .css-file.  
-
-Backend has server.js for controlling emails from the contact form. We use dotenv, so remember to create your own .env file where you can store your API_KEY and toher sensitive information. I nthis example we use SendGrid to handle emails.    
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>  
 
