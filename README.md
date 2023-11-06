@@ -13,7 +13,7 @@
   <p align="center">
     This is Portfolio page made with react. I also used this project to learn react, which was new technology to me.
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
     ·
   </p>
 </div>
@@ -47,6 +47,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://roytioniko.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,3 +163,4 @@ Project Link: <a href="https://github.com/nikoroytio/portfolio-page">HERE</a>
 [Bootstrap-url]: https://getbootstrap.com
 [Node.js]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en
+[product-screenshot]: frontend/src/assets/image/screenshot.png
