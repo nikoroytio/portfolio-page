@@ -12,8 +12,7 @@
 <h3 align="center">Portfolio-page</h3>
  <img src="/frontend/public/FAVICON.ico" alt="Logo" width="80" height="80">
   <p align="center">
-   
-  <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
+   <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
   </p>
 </div>
 
