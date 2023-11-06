@@ -6,7 +6,7 @@ import videoSrc from '../assets/videos/oma-kuva.mp4';
 function BackgroundVideo() {
   return (
     <div className="video-container">
-      <video autoPlay="autoplay" muted className="video">
+      <video autoPlay="autoplay" muted playsInline className="video">
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
