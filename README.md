@@ -13,7 +13,7 @@
   <p align="center">
     This is Portfolio page made with react. I also used this project to learn react, which was new technology to me.
     <br />
-    <a href="https://nikoroytio.com" target="blank" rel=”noopener noreferrer” >View Demo</a>
+    <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer” >View Demo</a>
     ·
   </p>
 </div>
