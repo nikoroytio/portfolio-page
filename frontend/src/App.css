@@ -1,5 +1,7 @@
 /*this stylesheet contains default styles to be used in application */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap|Poppins:400;700');
+
 @font-face {
   font-family: 'BERLIN';  
   src: url('/public/fonts/Berlin-Bold.woff2') format('woff2'),
