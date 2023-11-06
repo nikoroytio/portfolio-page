@@ -5,12 +5,14 @@
 
 <br />
 <div align="center">
+  
   <a href="https://github.com/nikoroytio/portfolio-page">
   </a>
 
 <h3 align="center">Portfolio-page</h3>
 
   <p align="center">
+    <img src="/frontend/public/FAVICON.ico" alt="Logo" width="80" height="80">
     <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
     ·
   </p>
