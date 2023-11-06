@@ -14,7 +14,6 @@
   <p align="center">
    
   <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
-  ·
   </p>
 </div>
 
