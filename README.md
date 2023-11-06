@@ -55,7 +55,6 @@ development, and frontend/api which is configured for Vercel deployment.  More a
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
