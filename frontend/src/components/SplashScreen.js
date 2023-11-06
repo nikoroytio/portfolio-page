@@ -27,6 +27,7 @@ function SplashScreen({ onFinished }) {
         height="100%"
         autoPlay
         muted
+        playsInline  // This attribute is necessary for some versions of Safari
         onEnded={() => setVideoEnded(true)}
       >
         <source src={SplashScreenVideo} type="video/mp4" />
