@@ -11,8 +11,6 @@
 <h3 align="center">Portfolio-page</h3>
 
   <p align="center">
-    This is Portfolio page made with react. I also used this project to learn react, which was new technology to me.
-    <br />
     <a href="https://nikoroytio.com" target="_blank" rel=”noopener noreferrer”>View Demo</a>
     ·
   </p>
@@ -48,7 +46,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://roytioniko.com)
+[![Product Name Screen Shot][product-screenshot]](https://roytioniko.com)  
+
+This is Portfolio page made with react. I also used this project to learn react, which was new technology to me.  
+The project has two configurations for handling emails. First the backend forlder, ehich has server.js for local  
+development, and frontend/api which is configured for Vercel deployment.  More about structure and usage on section  
+<a href="#usage">Usage</a>.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
