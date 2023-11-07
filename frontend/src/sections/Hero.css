@@ -42,7 +42,7 @@
     vertical-align: top;
     border-right: .15em solid white;
     white-space: nowrap;
-    animation: typewriter 2s steps(19, end) forwards;
+    animation: typewriter 1.5s steps(19, end) forwards;
   }
   
   .typewriter-h2 {
