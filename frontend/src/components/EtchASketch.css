@@ -26,7 +26,7 @@
 }
 .sketchButtons button{
     background-color: #f9004d;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;;
     color: white;
     display: block;
     margin: 20px 10px 20px 10px;
