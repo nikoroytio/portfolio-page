@@ -32,7 +32,7 @@ function Testimonialsslider() {
                   their excellent communication have been key to effective cooperation. We warmly recommend GoBros' and Niko's services to 
                   everyone who wants to improve their digital skills or develop their companies' digital capabilities. 
                   Their expertise, professional approach and ability to produce customized solutions make them an excellent 
-                  partner in the development of digital competence</p>
+                  partner in the development of digital competence.</p>
                 <i>Mia Koivujoki, R&D expert, Savonia University of Applied Sciences</i>
               
             </Carousel.Caption>
