@@ -17,7 +17,7 @@
 }
 #rematch {
     background-color: #f9004d;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;
     color: white;
     padding: 10px;
     border-radius: 20px;
