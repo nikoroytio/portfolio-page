@@ -84,7 +84,7 @@
   } 
 
   /* we use this to get back to defaul styling in image */
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 500px) {
     
     .AboutImage{
         min-width: 100%;
