@@ -27,30 +27,60 @@ function EtchASketch() {
         let userInput;
         while (true) {
             userInput = prompt("Set the new width as squares. The allowed maximum is 100 squares");
-    
+
             if (!isNaN(userInput) && userInput.trim() !== "" && userInput > 0 && userInput <= 100) {
                 break;  // Break out of the loop if valid input is provided
             } else {
                 alert("Please enter a valid number between 1 and 100.");
             }
         }
-    
+
         setGridSize(userInput);
         setSquares(Array(userInput * userInput).fill(false));
+    };
+
+    const handleTouchMove = (event) => {
+        if (isDrawing) {
+            // Get the touch coordinates
+            const touch = event.touches[0];
+            // Convert touch coordinates to local (x, y) within the grid
+            const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
+
+            // Proceed only if the touched element is one of the squares
+            if (targetElement && targetElement.classList.contains('square')) {
+                const index = Array.from(targetElement.parentNode.children).indexOf(targetElement);
+                handleMouseOver(index);
+            }
+        }
+    };
+
+    // Use this function to start drawing
+    const handleTouchStart = (event) => {
+        setIsDrawing(true);
+        // Also handle the case where user starts by touching
+        handleTouchMove(event);
+    };
+
+    // Call this function to stop drawing
+    const handleTouchEnd = () => {
+        setIsDrawing(false);
     };
 
     return (
         <div>
             <div className='sketchButtons'>
-            <button id="reset" onClick={resetSketchboard}>Make new sketchboard</button>
-            <button onClick={() => setIsErasing(!isErasing)}> {isErasing ? "Switch to Draw Mode" : "Switch to Erase Mode"}</button>
+                <button id="reset" onClick={resetSketchboard}>Make new sketchboard</button>
+                <button onClick={() => setIsErasing(!isErasing)}> {isErasing ? "Switch to Draw Mode" : "Switch to Erase Mode"}</button>
             </div>
-            <div id="containerSketch" 
+            <div id="containerSketch"
                 style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}
                 onMouseDown={() => setIsDrawing(true)}  // Start drawing when mouse button is pressed
                 onMouseUp={() => setIsDrawing(false)}  // Stop drawing when mouse button is released
                 onMouseLeave={() => setIsDrawing(false)}  // Stop drawing if mouse leaves the container
-                >
+                onTouchStart={handleTouchStart}  // Handle touch start
+                onTouchMove={handleTouchMove}    // Handle touch move
+                onTouchEnd={handleTouchEnd}      // Handle touch end
+            >
                 {squares.map((isDrawn, index) => (
                     <div
                         key={index}
