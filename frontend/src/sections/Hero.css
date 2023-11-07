@@ -14,6 +14,7 @@
 .overlay-content {
     z-index: 2; /* Positioned above the video */
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .overlay-content h2 {
