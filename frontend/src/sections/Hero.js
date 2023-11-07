@@ -20,6 +20,9 @@ function Hero({ onScrollDown }) {
     }, 50); // A small delay to ensure the About section is rendered
   };
 
+
+  //even though you can use one column with flex direction column, it makes h2 start from left side bacause of paren container.
+  //that's why we keeop them in separate rows
   return (
     <Container fluid className="p-0 hero-container" id="hero">
       <BackgroundVideo />
@@ -37,15 +40,11 @@ function Hero({ onScrollDown }) {
                 <Linkedin />
               </a>
              </div>
+             <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="auto">
-          <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto">
+          <Col xs="auto" className='h2Column'>
             <h2 className='typewriter-h2'>YOUR FUTURE DEVELOPER</h2>
             <a href="#about-me" className='scrollDownButton' onClick={handleScrollDown}>
               <ScrollDownSVG/>
