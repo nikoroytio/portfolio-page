@@ -13,6 +13,18 @@ function NavBar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  function isMobileDevice() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+
+  function handleButtonClick() {
+    if (isMobileDevice()) {
+      handleClose();
+    } else {
+      return
+    }
+  }
+
   return (
     <div>
       <Navbar className="fixed-top">
@@ -26,11 +38,11 @@ function NavBar() {
           <Offcanvas.Title>MENU</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <Nav.Link href="#hero" onClick={handleClose}>HOME</Nav.Link>
-        <Nav.Link href="#about-me" onClick={handleClose}>ABOUT ME</Nav.Link>
-        <Nav.Link href="#projects" onClick={handleClose}>PROJECTS</Nav.Link>
-        <Nav.Link href="#testimonials" onClick={handleClose}>TESTIMONIALS</Nav.Link>
-        <Nav.Link href="#contact" onClick={handleClose}>CONTACT ME</Nav.Link>
+        <Nav.Link href="#hero" onClick={handleButtonClick}>HOME</Nav.Link>
+        <Nav.Link href="#about-me" onClick={handleButtonClick}>ABOUT ME</Nav.Link>
+        <Nav.Link href="#projects" onClick={handleButtonClick}>PROJECTS</Nav.Link>
+        <Nav.Link href="#testimonials" onClick={handleButtonClick}>TESTIMONIALS</Nav.Link>
+        <Nav.Link href="#contact" onClick={handleButtonClick}>CONTACT ME</Nav.Link>
 
         </Offcanvas.Body>
       </Offcanvas>
