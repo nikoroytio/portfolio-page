@@ -41,6 +41,8 @@ function EtchASketch() {
 
     const handleTouchMove = (event) => {
         if (isDrawing) {
+            // prevent page scrolling
+            event.preventDefault();
             // Get the touch coordinates
             const touch = event.touches[0];
             // Convert touch coordinates to local (x, y) within the grid
