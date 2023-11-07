@@ -58,6 +58,7 @@ function EtchASketch() {
 
     // Use this function to start drawing
     const handleTouchStart = (event) => {
+        event.preventDefault();
         setIsDrawing(true);
         // Also handle the case where user starts by touching
         handleTouchMove(event);
