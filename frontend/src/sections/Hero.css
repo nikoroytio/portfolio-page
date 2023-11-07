@@ -23,15 +23,17 @@
 
 }
 
+.h2Column{
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes typewriter {
     0% {
-      width: 0;
-    }
-    99.99% {
-      border-right-color: white; /* Maintain the cursor color till the very end */
+      max-width: 0;
     }
     100% {
-      width: 100%;
+      max-width: 2000px;
       border-right: none; /* Hide the cursor right after the last character */
     }
   }
@@ -40,6 +42,7 @@
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
+    max-width: 2000px;
     border-right: .15em solid white;
     white-space: nowrap;
     animation: typewriter 1.5s steps(19, end) forwards;
@@ -50,6 +53,7 @@
     overflow: hidden;
     visibility: hidden;
     vertical-align: top;
+    max-width: 1500px;
     border-right: .15em solid  #f9004d;
     white-space: nowrap;
     animation: typewriter 1s steps(21, end) forwards, fadeIn 0.01s 2.5s forwards;
@@ -124,7 +128,16 @@
     .hero-container h2{
       font-size:20px;
     }
-  }
+
+    .social-media-icons svg{
+      width:40px;
+      transition: 0.3s ease;
+    }
+
+    .scrollDownButton svg{
+      width: 40px;
+    }
+}
 
   @media only screen and (max-width: 550px) {
     .hero-container h1{
