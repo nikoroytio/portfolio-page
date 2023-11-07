@@ -26,11 +26,11 @@ function NavBar() {
           <Offcanvas.Title>MENU</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <Nav.Link href="#hero">HOME</Nav.Link>
-        <Nav.Link href="#about-me">ABOUT ME</Nav.Link>
-        <Nav.Link href="#projects">PROJECTS</Nav.Link>
-        <Nav.Link href="#testimonials">TESTIMONIALS</Nav.Link>
-        <Nav.Link href="#contact">CONTACT ME</Nav.Link>
+        <Nav.Link href="#hero" onClick={handleClose}>HOME</Nav.Link>
+        <Nav.Link href="#about-me" onClick={handleClose}>ABOUT ME</Nav.Link>
+        <Nav.Link href="#projects" onClick={handleClose}>PROJECTS</Nav.Link>
+        <Nav.Link href="#testimonials" onClick={handleClose}>TESTIMONIALS</Nav.Link>
+        <Nav.Link href="#contact" onClick={handleClose}>CONTACT ME</Nav.Link>
 
         </Offcanvas.Body>
       </Offcanvas>
