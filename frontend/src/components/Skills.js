@@ -14,17 +14,17 @@ function Skills() {
     <Table className='skillBars' id="skillTable">
       <tbody>
         <tr>
-          <td><CircularProgressBar value={75} />
+          <td><CircularProgressBar value={29} />
           <p>CSS</p></td>
       
-          <td><CircularProgressBar value={84} />
+          <td><CircularProgressBar value={26} />
           <p>HTML</p></td>
 
-          <td><CircularProgressBar value={74} />
+          <td><CircularProgressBar value={18} />
           <p>JAVASCRIPT</p></td>
           </tr>
           <tr>
-          <td><CircularProgressBar value={52} />
+          <td><CircularProgressBar value={16} />
           <p>REACT</p></td>
 
           <td><CircularProgressBar value={100} />
