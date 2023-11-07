@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './EtchASketch.css';
 
 //If you use this page as your base, I hope you will change projects to something of your own
