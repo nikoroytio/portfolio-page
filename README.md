@@ -62,6 +62,7 @@ development, and frontend/api which is configured for Vercel deployment.  More a
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Node][Node.js]][Node-url]
+* [![Vercel][Vercel]][Vercel-url]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -170,4 +171,6 @@ Project Link: <a href="https://github.com/nikoroytio/portfolio-page">HERE</a>
 [Bootstrap-url]: https://getbootstrap.com
 [Node.js]: https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en
+[Vercel]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com/
 [product-screenshot]: frontend/src/assets/image/screenshot.PNG
