@@ -11,6 +11,17 @@ function EtchASketch() {
     const [isDrawing, setIsDrawing] = useState(false); // To track if mouse button is pressed
     const [isErasing, setIsErasing] = useState(false);
 
+    useEffect(() => {
+        const container = document.getElementById('containerSketch');
+        // Attach the event listener
+        container.addEventListener('touchmove', handleTouchMove, { passive: false });
+      
+        // Clean up the event listener
+        return () => {
+          container.removeEventListener('touchmove', handleTouchMove, { passive: false });
+        };
+      }, [isDrawing]); // Dependencies array to re-bind the event listener if isDrawing changes
+
     const handleMouseOver = (index) => {
         if (isDrawing) {
             const updatedSquares = [...squares];
