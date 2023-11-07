@@ -57,15 +57,15 @@
     max-width: 1500px;
     border-right: .15em solid  #f9004d;
     white-space: nowrap;
-    animation: typewriter 1s steps(21, end) forwards, fadeIn 0.01s 2.5s forwards;
-    animation-delay: 2s; 
+    animation: typewriter 1s steps(21, end) forwards, fadeIn 0.01s 1.2 forwards;
+    animation-delay: 1.2s; 
   }
 
   .scrollDownButton svg{
     width: 60px;
     height: auto;
     visibility: hidden;
-    animation: fadeIn 1s 4s forwards;
+    animation: fadeIn 1s 2.5s forwards;
     margin-bottom: 30px;
     transition: 0.3s ease;
   }
@@ -81,7 +81,7 @@
     align-items: flex-end;
     visibility: hidden;
     gap:40px;
-    animation: fadeIn 1s 4s forwards;
+    animation: fadeIn 1s 2.5s forwards;
     margin-bottom: 20px;
   }
 
