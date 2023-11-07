@@ -24,7 +24,7 @@ function Hero({ onScrollDown }) {
     <Container fluid className="p-0 hero-container" id="hero">
       <BackgroundVideo />
       <div className="overlay-content">
-        <Row>
+        <Row className='justify-content-center'>
           <Col xs="auto">
           <div className='social-media-icons'>
               <a href="https://github.com/nikoroytio" target="_blank" rel="noopener noreferrer">
@@ -37,6 +37,10 @@ function Hero({ onScrollDown }) {
                 <Linkedin />
               </a>
              </div>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs="auto">
           <h1 className='typewriter-h1'>HI! I'M NIKO RÖYTIÖ</h1>
           </Col>
         </Row>
