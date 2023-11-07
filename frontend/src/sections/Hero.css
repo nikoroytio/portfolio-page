@@ -58,7 +58,7 @@
     border-right: .15em solid  #f9004d;
     white-space: nowrap;
     animation: typewriter 1s steps(21, end) forwards, fadeIn 0.01s 2.5s forwards;
-    animation-delay: 2.5s; 
+    animation-delay: 2s; 
   }
 
   .scrollDownButton svg{
