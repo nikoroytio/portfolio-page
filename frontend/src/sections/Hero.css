@@ -32,7 +32,7 @@
     }
     100% {
       width: 100%;
-      border-right-color: transparent; /* Hide the cursor right after the last character */
+      border-right: none; /* Hide the cursor right after the last character */
     }
   }
 
@@ -75,10 +75,9 @@
     justify-content: center;
     align-items: flex-end;
     visibility: hidden;
-    transform: translateY(300px);
     gap:40px;
-    scale: 0.3;
     animation: fadeIn 1s 4s forwards;
+    margin-bottom: 20px;
   }
 
   .social-media-icons svg .outline{
@@ -90,12 +89,13 @@
   }
 
   .social-media-icons svg{
+    width:60px;
     transition: 0.3s ease;
   }
 
   .social-media-icons svg:hover{
     transition: 0.3s ease;
-    transform: translateY(-17px);
+    transform: translateY(-10px);
   }
 
   /* optimisation for smaller screen, because of the animations we have to use nowrap */
@@ -114,11 +114,6 @@
     .hero-container h2{
       font-size:26px;
     }
-
-    .social-media-icons svg{
-      transform: scale(0.7);
-      margin-bottom: 20px;
-    }
   }
 
   @media only screen and (max-width: 720px) {
@@ -128,10 +123,6 @@
 
     .hero-container h2{
       font-size:20px;
-    }
-
-    .social-media-icons svg{
-      margin-bottom: 50px;
     }
   }
 
@@ -143,13 +134,4 @@
     .hero-container h2{
       font-size:14px;
     }
-
-    .social-media-icons svg{
-      margin-bottom: 100px;
-    }
-
-    .scrollDownButton svg  {
-      transform: scale(0.7);
-  }
-
   }
