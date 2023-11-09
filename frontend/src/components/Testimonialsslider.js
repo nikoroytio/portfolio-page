@@ -27,8 +27,7 @@ function Testimonialsslider() {
                 <p>GoBros and Niko's trainings have been carefully planned and implemented. 
                   Their deep knowledge of digital tools and techniques has been impressive. The trainers have demonstrated 
                   both wide-ranging competence and specialized competence, which has given the trainees the opportunity to 
-                  use the latest digital solutions Their team has always been 
-                  approachable, responsive and ready to meet our needs. Their ability to adapt to different situations and 
+                  use the latest digital solutions. Their ability to adapt to different situations and 
                   their excellent communication have been key to effective cooperation.
                   Their expertise, professional approach and ability to produce customized solutions make them an excellent 
                   partner in the development of digital competence.</p>
