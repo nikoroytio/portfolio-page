@@ -23,7 +23,7 @@ function Skills() {
           <td><CircularProgressBar value={18} />
           <p>JAVASCRIPT</p></td>
 
-          <td><CircularProgressBar value={63} />
+          <td><CircularProgressBar value={72} />
           <p>WORDPRESS</p></td>
           </tr>
           <tr>
