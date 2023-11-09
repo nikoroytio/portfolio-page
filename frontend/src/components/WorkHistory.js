@@ -9,9 +9,9 @@ const MyWorkHistory = () => {
          role of the main trainer in Videox company group projects, as well as the YOM service's main trainer 
          in website development, as well as a trainer in marketing and video services. Also responsible for 
          website and online store programming, UIX design and Search Engine Optimization in several projects.` },
-         { date: 'Aug 2015-', company: ' UKKO.FI', position: "Light entrepreneur" , description: `Entrepreneurial 
+         { date: 'Aug 2015-Dec 2017', company: ' UKKO.FI', position: "Light entrepreneur" , description: `Entrepreneurial 
          activity started alongside studies. Video productions for Finnish sports organizations.`}, 
-         { date: 'Aug 2015-', company: ' NEXT LEVEL - App', position: "Content Creator" , description: `Content 
+         { date: 'Aug 2015 - Jan 2016', company: ' NEXT LEVEL - App', position: "Content Creator" , description: `Content 
          creator and application developer as a student in a Finnish startup company`},
          { date: '06/2015 - 08/2015 & 06-2016 - 08-2016 & 06-2017 - 08-2017', company: 'Sukeva Prison', position: 'Warden', description: 'Duties of a prison guard' },
         { date: '06/2009 - 08/2014', company: 'several different employers', position: 'Summer jobs',  description: `I started my 
