@@ -22,10 +22,16 @@ function Skills() {
 
           <td><CircularProgressBar value={18} />
           <p>JAVASCRIPT</p></td>
+
+          <td><CircularProgressBar value={63} />
+          <p>WORDPRESS</p></td>
           </tr>
           <tr>
           <td><CircularProgressBar value={16} />
           <p>REACT</p></td>
+
+          <td><CircularProgressBar value={14} />
+          <p>PYTHON</p></td>
 
           <td><CircularProgressBar value={100} />
           <p>VIDEO EDITING</p></td>
