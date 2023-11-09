@@ -4,6 +4,7 @@ import './Timeline.css';
 
 // Timeline functional component that receives an array of event objects.
 // It maps over these events to create individual TimelineEvent components.
+// These are in WorkHistory.js
 
 const Timeline = ({ events }) => {
     return (
