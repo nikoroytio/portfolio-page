@@ -29,8 +29,7 @@ function Testimonialsslider() {
                   both wide-ranging competence and specialized competence, which has given the trainees the opportunity to 
                   use the latest digital solutions Their team has always been 
                   approachable, responsive and ready to meet our needs. Their ability to adapt to different situations and 
-                  their excellent communication have been key to effective cooperation. We warmly recommend GoBros' and Niko's services to 
-                  everyone who wants to improve their digital skills or develop their companies' digital capabilities. 
+                  their excellent communication have been key to effective cooperation.
                   Their expertise, professional approach and ability to produce customized solutions make them an excellent 
                   partner in the development of digital competence.</p>
                 <i>Mia Koivujoki, R&D expert, Savonia University of Applied Sciences</i>
@@ -55,7 +54,7 @@ function Testimonialsslider() {
               <img src={QuotationMarks} />
                 <p>Cooperation with Niko is great. Everything that has been agreed is carried out and adhered to. 
                   Above all, cooperation with Niko feels like the work is done person to person.</p>
-                  <i>Anna-Reetta Väänänen, R&D expert, Savonia University of Applied Sciences</i>
+                  <i>Anna-Reetta Väänänen, CEO of Anna's Darling and represantive of Wife Carrying World Championship </i>
               
             </Carousel.Caption>
           </Carousel.Item>
